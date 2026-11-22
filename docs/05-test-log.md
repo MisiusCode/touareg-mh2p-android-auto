@@ -67,50 +67,72 @@ Other observations:
   attribute, and the plugin does not register for indications).
 - No route-end event (0 / valid 2) was seen; the plugin deactivated on the 90 s timeout.
 
-## The open problem: no arrow
+## Arrow investigation
 
-Established:
+### 0.2 recording: factory navigation versus plugin (2026-11-21)
 
-- The plugin wrote the arrow rows (for example `{0: 13, 1: 192, 2: 0, 3: ""}`) to lists 751
-  and 838 on every change and every 2 s.
-- The firmware's cluster function reads exactly that row format from list 751
-  (`03-verification.md`, section 5), and street and distance, written through the sibling
-  API, do reach the HUD.
-- The HUD can draw arrows (it does for the factory navigation).
+`logs/2026-11-21_plugin-0.2_factory-and-aa-recording.log`, lines `SNOOP other` (factory)
+and `SNOOP plugin`.
 
-Not known:
+- Factory, far from a right turn: list 751 = `28/192/0/""` (prepare turn, right).
+- Factory, from about 250 m: `13/192/0/"À@"` (turn, right, side streets = characters with
+  direction-byte values, here {192, 64}; other examples seen: `"Á@ "`, `"AÁÀ@"`). Bar on near
+  the turn. Between manoeuvres 11, 10 and 6; two-row lists occur (`[11/0; 13/192]`).
+- Factory state: rg=1, navStatus=0, kombi map 2/1. Lists 751 and 838 always equal.
+- Plugin 0.2 received no Android Auto events in this run (phone connected after the unit
+  had started; fixed in 0.3).
 
-- Whether the arrow message is actually sent, and with what content.
-- Whether the factory navigation's rows look different (side streets string, z-level,
-  different main element numbers, more than one row).
-- Whether the HUD on this car takes its arrow from somewhere other than list 751: list 838
-  (the HMI's own manoeuvre view), or a condition such as the active guidance type
-  (`ActiveRgType`, which depends on the cluster map status).
+### 0.3 drive (2026-11-22): data identical, still no arrow
 
-Ideas not yet tried, roughly in order of cost:
+`logs/2026-11-22_plugin-0.3_aa-drive.log`. Events arrived, "resubscribed (guidance
+started)" seen. The cluster service showed for Android Auto guidance exactly the factory
+form: `rg=1 navStatus=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="…" dist~700 bar=0` far and
+`bap=[13/192/0/"À@"] … bar=1` near. Street and distance on the HUD, no arrow.
 
-1. **Record the factory navigation** (0.2 does this): compare its rows in 751 and 838 and
-   its state values with the plugin's.
-2. Write a non-empty side streets string and/or copy whatever else the recording shows.
-3. Check `ActiveRgType` / map switch state during factory guidance versus plugin guidance.
-4. Try with the cluster's map view switched off, in case the arrow path depends on it.
+**Conclusion: the row format and the guidance state are not the cause.**
 
-### Doubtful mapping: event 14
+### Where the arrow comes from
 
-In the Android Auto turn enumeration, 14 is "straight" (stated from memory, not
-re-checked against a source). The plugin maps it to an exit arrow (15/16), following the
-rule in the Porsche/Audi code for ramps. Google Maps sent 14 with side 0 for "towards
-Slyvų g." and "Birutės g.", which looks like plain "continue straight". Probably should be
-11 (follow street) with direction 0 when side is 0. Not changed yet.
+Reading the P2869 HMI classes:
 
-## Plugin 0.2
+- The cluster protocol function `ManeuverDescriptor` (navsd, function 23) does send list 751.
+  The cluster panel uses it; the HUD on this car does not draw from it.
+- The HUD has a picture channel: `org.dsi.ifc.komoview.DSIKOMOView` ("KOMO view", instance 1
+  = HUD, 0 = cluster), with view types 1 (manoeuvre view) and 2 (route info), plus a graphics
+  stream `DSIKOMOGfxStreamSink`. The HMI (`mapstream.mosthud`: `StartupHudStreamSequence`,
+  `HudMapView`, `HUDResyncSequence`, `ChangeDataRateSequence`) only sets style 5, enables
+  the view, switches display context 4 and sets the stream rate. No HMI code fills the view;
+  the picture is produced below the HMI by the factory navigation.
 
-Built 2026-11-21, simulated on a PC with the event pattern from the first drive.
-**Not yet installed.** Planned recording drive:
+### 0.4 drive (2026-11-22): the picture service ignores Android Auto
 
-1. Factory navigation only (phone unplugged), two or three turns with HUD arrows visible,
-   then stop guidance.
-2. Android Auto with Google Maps, two or three turns.
-3. Park, wait half a minute, unplug the phone, run the card, read `Logs/vwaa_unit/vwaa.log`.
+`logs/2026-11-22_plugin-0.4_aa-drive.log`. Both view services connected. HUD reported
+`enabled=true`, `visible=false`, `viewType=0` for the whole drive. 236 route info elements
+sent; zero responses, no attribute change. Cluster instance reported nothing.
 
-The lines to compare start with `SNOOP other` (factory) and `SNOOP plugin`.
+### Factory route with 0.4 listening (2026-11-22)
+
+`logs/2026-11-22_plugin-0.4_factory-route-hud-picture.log`, phone unplugged:
+
+| Time (ms) | HUD view |
+|---|---|
+| 63148 | viewType=2 (route info) — route started |
+| 63471 | visible=true |
+| 103754 … 108292 | viewType alternates 1 / 2 as a turn comes up (manoeuvre view) |
+| 160654 | viewType=2 |
+| 169620 / 170071 | viewType=0, visible=false — route stopped |
+
+**Conclusion: the HUD arrow is the KOMO picture, and it is switched on and filled by the
+factory navigation only.** Street and distance reach the HUD as data, the arrow does not.
+
+### 0.5: automatic tries (built 2026-11-22, not yet run)
+
+Runs the try sequence in `04-part-a-plugin.md` during Android Auto guidance and logs per
+step whether the service reacted. Needs at least 10 minutes of uninterrupted guidance.
+Look for `PROBE` lines. If none reacts, the arrow cannot come from Part A; the remaining
+route is drawing a picture ourselves (the same kind of work as Part B).
+
+### Event 14
+
+Event 14 with side 0 appeared for "continue towards …" and is mapped to 11 / 0 (follow
+street) since 0.3.

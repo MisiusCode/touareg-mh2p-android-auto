@@ -18,6 +18,12 @@ final class Mapper {
     static final int ROUNDABOUT_TRS_RIGHT = 21;
     static final int ROUNDABOUT_TRS_LEFT = 22;
     static final int UTURN = 25;
+    static final int PREPARE_TURN = 28;
+    static final int PREPARE_ROUNDABOUT = 29;
+    static final int PREPARE_U_TURN = 31;
+
+    /** below this distance the factory navigation switches from the "prepare" symbol to the junction symbol */
+    static final int NEAR_M = 300;
 
     static final int SIDE_LEFT = 1;
     static final int SIDE_RIGHT = 2;
@@ -66,7 +72,8 @@ final class Mapper {
                 main = FORK_2;
                 break;
             case 14:
-                if (side == 0 && angle == 0 && num == 1) {
+                // 14 is "straight" in Android Auto; Google Maps sends it with side 0 for "continue"
+                if (side == 0) {
                     main = FOLLOW_STREET;
                 } else if (side == SIDE_LEFT) {
                     main = EXIT_LEFT;
@@ -114,5 +121,45 @@ final class Mapper {
             }
         }
         return new int[] { main, dir };
+    }
+
+    /**
+     * What the factory navigation was seen to write on this unit (recorded 2026-11-22):
+     * far from the junction a "prepare" symbol with the direction and no side streets, and from
+     * about 250 m the junction symbol itself with a side-street string and the distance bar.
+     * @return the main element to show at this distance
+     */
+    static int atDistance(int main, int dist) {
+        if (dist < 0 || dist <= NEAR_M) {
+            return main;
+        }
+        if (main == TURN || main == TURN_ON_MAINROAD) {
+            return PREPARE_TURN;
+        }
+        if (main == ROUNDABOUT_TRS_RIGHT || main == ROUNDABOUT_TRS_LEFT) {
+            return PREPARE_ROUNDABOUT;
+        }
+        if (main == UTURN) {
+            return PREPARE_U_TURN;
+        }
+        return main;
+    }
+
+    /**
+     * Side streets for a junction symbol: one character per arm, the character value being the
+     * arm's direction byte. The factory navigation wrote e.g. {192, 64} for a right turn at a
+     * crossing. Android Auto does not describe the junction, so this draws the turn arm and the
+     * arm opposite to it.
+     */
+    static String sideStreets(int main, int dir) {
+        if (main != TURN && main != TURN_ON_MAINROAD) {
+            return "";
+        }
+        if (dir == 0 || dir == 128) {
+            return "";
+        }
+        char a = (char) (dir & 255);
+        char b = (char) ((dir + 128) & 255);
+        return new String(new char[] { a, b });
     }
 }

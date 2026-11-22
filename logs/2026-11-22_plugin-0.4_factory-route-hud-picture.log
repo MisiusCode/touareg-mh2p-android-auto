@@ -1,0 +1,46 @@
+6269 VWAndroidAutoNav 0.4 Activator.start
+8104 thread running, waiting 45s for the HMI
+56670 bootguard: start 2 of 3 armed
+56672 link check: propertyManager=true navbap=true list751=true list838=true dsiProxy=true
+56707 SNOOP other rg=0 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/0/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-0, 2<-0, 3<-]>]
+56741 subscribed to Android Auto next-turn event and distance
+56747 wrapper: installed around de.vw.mib.bap.mqbab2.common.api.androidauto.AndroidAutoASLDataAdapter
+56762 KOMO cluster service connected
+56773 KOMO hud visible=false valid=1
+56777 KOMO hud service connected
+56781 state stockRg=false focus=-1 recent=true haveManeuver=false ended=true live=false
+56785 KOMO hud viewType=0 valid=1 (1 manoeuvre view, 2 route info)
+56786 KOMO hud enabled=true valid=1
+61489 SNOOP other rg=2 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/0/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-0, 2<-0, 3<-]>]
+63148 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+63471 KOMO hud visible=true valid=1
+64559 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/16/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-16, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-16, 2<-0, 3<-]>]
+71333 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/0/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-0, 2<-0, 3<-]>]
+75140 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/16/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-16, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-16, 2<-0, 3<-]>]
+76075 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/32/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-32, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-32, 2<-0, 3<-]>]
+77373 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/48/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-48, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-48, 2<-0, 3<-]>]
+78575 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/64/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-64, 2<-0, 3<-]>]
+80979 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/160/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-160, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-160, 2<-0, 3<-]>]
+81421 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/144/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-144, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-144, 2<-0, 3<-]>]
+87455 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/128/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-128, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-128, 2<-0, 3<-]>]
+90277 state stockRg=false focus=-1 recent=false haveManeuver=false ended=true live=false
+92635 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/144/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-144, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-144, 2<-0, 3<-]>]
+95318 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/160/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-160, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-160, 2<-0, 3<-]>]
+96822 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/192/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-192, 2<-0, 3<-]>]
+102762 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[10/0/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-10, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-10, 1<-0, 2<-0, 3<-]>]
+103754 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+103764 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+103766 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+104142 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="Zigmantiškių gatvė"/"" dist~850 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+105016 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+105352 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""; 13/192/0/""] turnTo=""/"" dist~850 unit=0 bar=0 L751=2[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>; <de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-]>] L838=2[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>; <de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-]>]
+108292 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+109016 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="Zigmantiškių gatvė"/"" dist~850 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+146831 bootguard: clean run, counter removed
+160654 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+161116 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/16/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-16, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-16, 2<-0, 3<-]>]
+162084 SNOOP other rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/0/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-0, 2<-0, 3<-]>]
+169620 KOMO hud viewType=0 valid=1 (1 manoeuvre view, 2 route info)
+169791 SNOOP other rg=0 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[0/0/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-0, 2<-0, 3<-]>]
+170071 KOMO hud visible=false valid=1
+170794 SNOOP other rg=0 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[6/0/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-0, 2<-0, 3<-]>]

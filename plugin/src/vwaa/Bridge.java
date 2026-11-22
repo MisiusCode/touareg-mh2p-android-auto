@@ -28,6 +28,9 @@ import org.dsi.ifc.androidauto2.DSIAndroidAuto2;
  *   vwaa_no838   do not write list 838
  *   vwaa_reset   clear the self-disable counter
  *   vwaa_nosnoop do not record what the cluster service sees
+ *   vwaa_nokomo  do not offer the manoeuvre to the HUD picture service (experiment), only listen
+ *   vwaa_noprobe offer it in the plain form only, do not try the other switches (0.5)
+ *   vwaa_plain   write the junction symbol at every distance, without side streets (as in 0.1/0.2)
  */
 final class Bridge implements Runnable {
     private static final int DP_RG_STATE = 732;
@@ -52,6 +55,9 @@ final class Bridge implements Runnable {
     private static volatile boolean stop = false;
 
     private final AaEvents events = new AaEvents();
+    private final Komo komo = new Komo();
+    private boolean noKomo = false;
+    private boolean noProbe = false;
     private DSIAndroidAuto2 aa = null;
     private boolean subscribed = false;
     private QuietAndroidAuto wrapper = null;
@@ -69,6 +75,11 @@ final class Bridge implements Runnable {
     private long lastErrLog = 0L;
     private long lastSnoop = 0L;
     private boolean noSnoop = false;
+    private boolean plain = false;
+    private boolean prevStockRg = false;
+    private long rgSince = 0L;
+    private long lastResub = 0L;
+    private String lastSide = null;
 
     private boolean active = false;
     private int notLive = 0;
@@ -200,6 +211,9 @@ final class Bridge implements Runnable {
         }
         noHide = Flags.onMedia("vwaa_nohide");
         noSnoop = Flags.onMedia("vwaa_nosnoop");
+        plain = Flags.onMedia("vwaa_plain");
+        noKomo = Flags.onMedia("vwaa_nokomo");
+        noProbe = Flags.onMedia("vwaa_noprobe");
         if (Flags.onMedia("vwaa_no838")) {
             no838 = true;
         }
@@ -224,6 +238,35 @@ final class Bridge implements Runnable {
             Log.log("subscribed to Android Auto next-turn event and distance");
         } catch (Throwable t) {
             Log.log("subscribe failed: " + t);
+        }
+    }
+
+    /**
+     * A subscription made before the phone is connected was seen to deliver nothing once
+     * guidance started (2026-11-22). So subscribe again when the stock side reports guidance,
+     * and keep trying while no event has arrived.
+     */
+    private void resubscribe(long now, String why) {
+        lastResub = now;
+        try {
+            DSIProxy p = DSIProxyFactory.getDSIProxyAPI().getDSIProxy();
+            DSIAndroidAuto2 fresh = (DSIAndroidAuto2) p.getService(null, DSIAndroidAuto2.class);
+            if (fresh == null) {
+                Log.log("resubscribe (" + why + "): service not available");
+                return;
+            }
+            try {
+                if (aa != null) {
+                    aa.clearNotification(AA_ATTRS, events);
+                }
+            } catch (Throwable t) {
+            }
+            aa = fresh;
+            aa.setNotification(AA_ATTRS, events);
+            subscribed = true;
+            Log.log("resubscribed (" + why + ")");
+        } catch (Throwable t) {
+            Log.log("resubscribe failed (" + why + "): " + t);
         }
     }
 
@@ -277,6 +320,10 @@ final class Bridge implements Runnable {
         }
         subscribe(now);
         installWrapper(now);
+        try {
+            komo.connect(now);
+        } catch (Throwable t) {
+        }
         hideMessage = subscribed && wrapper != null && !noHide;
 
         String[] roadOut = new String[1];
@@ -345,6 +392,16 @@ final class Bridge implements Runnable {
         } catch (Throwable t) {
         }
         long lastEvent = times[0] > times[1] ? times[0] : times[1];
+        if (stockRg && !prevStockRg) {
+            rgSince = now;
+            if (now - lastEvent > 5000L) {
+                resubscribe(now, "guidance started");
+            }
+        }
+        prevStockRg = stockRg;
+        if (stockRg && lastEvent < rgSince && now - lastResub > 15000L) {
+            resubscribe(now, "no events yet");
+        }
         boolean recent = now - lastEvent < RECENT_MS;
         boolean session = stockRg || focus == 2 || recent;
         boolean live = session && haveManeuver && !ended;
@@ -372,8 +429,10 @@ final class Bridge implements Runnable {
             activate();
             beat = true;
         }
-        if (beat || curMain != lastMain || curDir != lastDir) {
-            pushManeuver(curMain, curDir);
+        int showMain = plain ? curMain : Mapper.atDistance(curMain, dist);
+        String arms = plain ? "" : Mapper.sideStreets(showMain, curDir);
+        if (beat || showMain != lastMain || curDir != lastDir || !arms.equals(lastSide)) {
+            pushManeuver(showMain, curDir, arms);
         }
         if (beat || !curStreet.equals(lastStreet)) {
             pushTurnTo(curStreet);
@@ -399,6 +458,10 @@ final class Bridge implements Runnable {
             ServiceManager.aslPropertyManager.valueChangedInteger(DP_RG_STATE, 1);
             lastHeartbeat = now;
         }
+        try {
+            komo.show(now, !noKomo, !noProbe, showMain, curDir, curStreet, curMain == Mapper.ARRIVED ? -1 : dist);
+        } catch (Throwable t) {
+        }
     }
 
     private void activate() {
@@ -411,11 +474,16 @@ final class Bridge implements Runnable {
         lastBarOn = -1;
         lastBar = -1;
         lastStreet = null;
+        lastSide = null;
     }
 
     private void deactivate(String why) {
         Log.log("DEACTIVATE (" + why + ")");
         active = false;
+        try {
+            komo.clear();
+        } catch (Throwable t) {
+        }
         try {
             ListManager.getGenericASLList(LIST_MANEUVER).updateList(new Object[0]);
             if (!no838) {
@@ -444,22 +512,23 @@ final class Bridge implements Runnable {
         Mapper.reset();
     }
 
-    private void pushManeuver(int main, int dir) {
+    private void pushManeuver(int main, int dir, String side) {
         GenericCollector gc = new GenericCollector();
         gc.setIntItem(0, main);
         gc.setIntItem(1, dir);
         gc.setIntItem(2, 0);
-        gc.setStringItem(3, "");
+        gc.setStringItem(3, side);
         Object[] items = new GenericCollector[] { gc };
         ListManager.getGenericASLList(LIST_MANEUVER).updateList(items);
         if (!no838) {
             ListManager.getGenericASLList(LIST_MANEUVER2).updateList(items);
         }
-        if (main != lastMain || dir != lastDir) {
-            Log.log("maneuver main=" + main + " dir=" + dir);
+        if (main != lastMain || dir != lastDir || !side.equals(lastSide)) {
+            Log.log("maneuver main=" + main + " dir=" + dir + " sideArms=" + side.length());
         }
         lastMain = main;
         lastDir = dir;
+        lastSide = side;
     }
 
     private void pushTurnTo(String street) {
@@ -495,6 +564,10 @@ final class Bridge implements Runnable {
             if (wrapper != null && serviceField != null && serviceField.get(null) == wrapper) {
                 serviceField.set(null, wrapper.d);
             }
+        } catch (Throwable t) {
+        }
+        try {
+            komo.shutdown();
         } catch (Throwable t) {
         }
         Log.log("thread stopped");

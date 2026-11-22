@@ -125,6 +125,49 @@ These rules follow fifthBro's published table.
   instructions ("Turn right", "Head east", "Make a U-turn", "Continue…", "Keep…") become
   empty. English only; the phone's language decides these strings.
 
+### 0.3 changes
+
+- **Arrow in the factory form.** Written the way the factory navigation was recorded doing
+  it (0.2 recording, `05-test-log.md`): a "prepare" symbol (28 turn, 29 roundabout, 31
+  U-turn) while the manoeuvre is more than 300 m away, the junction symbol from 300 m, and
+  for a turn a side streets string with one character per arm (direction byte values, for
+  example `{192, 64}` → `"À@"`).
+- **Event 14 with side 0** is now 11 / 0 (follow street), not an exit.
+- **Resubscribe.** 0.2 got no Android Auto events when the phone was connected after the
+  unit had started. 0.3 subscribes again on the rising edge of the stock guidance flag and
+  every 15 s while no event has arrived.
+
+Result: the cluster service saw rows identical in form to the factory's, still no arrow.
+
+### 0.4 and 0.5: the HUD picture service (`Komo`, `KomoEvents`, `GfxEvents`)
+
+The factory HUD arrow is not built from list 751 (see `05-test-log.md`, "Where the arrow
+comes from"). It is a picture drawn by the head unit through `org.dsi.ifc.komoview.DSIKOMOView`
+(instance 0 cluster, 1 HUD) and streamed via `DSIKOMOGfxStreamSink`. The stock HMI code
+(`de.vw.mib.asl.internal.mapstream.mosthud`) only sets the view style (5), enables the view
+and manages the stream rate; the content comes from the factory navigation below the HMI.
+
+- **0.4** connects to both view instances, logs every attribute and response
+  (enabled, visibility, current view type, results) and sends a `RouteInfoElement` of type 3
+  (manoeuvre) with a `ManeuverElement(main, direction, 0)`, street and distance on every
+  change and every 5 s.
+- **0.5** adds the stream sink and `DSIKOMONavInfo` listeners and, while Android Auto
+  guidance is live, runs a fixed sequence of tries, logging for each whether the service
+  reported anything (`PROBE <step> end: SERVICE REACTED | no reaction`):
+
+  | Step | Action | Length |
+  |---|---|---|
+  | 1-plain-element | `setRouteInfoElement` only (as 0.4) | 30 s |
+  | 2-list-form | additionally `setRouteInfo(new RouteInfoElement[]{e})` | 20 s |
+  | 3-declare-visible | `notifyVisibility(true)` on both views, list form kept | 20 s |
+  | 4-off-and-on | `enableKomoView(false)` then `(true)` | 20 s |
+  | 5-style-N | HUD `setKomoViewStyle` 1, 2, 3, 4, 6 (stock is 5) | 10 s each |
+  | 6-arrow-mode | `DSIKOMONavInfo.setRgSelect(0)` (once per session) | 20 s |
+
+  Then a 60 s pause and rounds 2 and 3 (steps 2 to 5). After the style steps the HUD style
+  is set back to 5. If the HUD view reports `visible=true`, the sequence stops in the
+  current step and keeps it (`PROBE HIT`). Each guidance session starts again from step 1.
+
 ## The "mobile device" message
 
 `QuietAndroidAuto` replaces `APIFactory.androidAutoService`. Its
@@ -147,6 +190,9 @@ Empty files in `/tmp` or in the root of a USB stick / SD card (`/fs/usb0_0`, `/f
 | `vwaa_no838` | Do not write list 838 |
 | `vwaa_nosnoop` | Recorder off |
 | `vwaa_reset` | Clear the self-disable counter at the next start |
+| `vwaa_plain` | 0.3+: write the arrow in the 0.2 form (no prepare symbols, no side streets) |
+| `vwaa_nokomo` | 0.4+: do not send to the HUD picture service, only listen |
+| `vwaa_noprobe` | 0.5: send the plain element only, skip the try sequence |
 
 ## Self-disable
 
@@ -182,8 +228,8 @@ Running the install card again is safe and is how logs are collected.
 
 ## Known gaps
 
-- Arrow not drawn on the HUD (the open problem).
-- Event 14 mapping is doubtful (see `05-test-log.md`).
+- Arrow not drawn on the HUD: the HUD arrow is a picture rendered for the factory
+  navigation only (see `05-test-log.md`). 0.5 is the last try through existing services.
 - Street tidying is English only.
 - Factory guidance and Android Auto guidance at the same time overwrite each other.
 - Waze and other apps untested.

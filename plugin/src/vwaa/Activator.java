@@ -5,7 +5,7 @@ import org.osgi.framework.BundleContext;
 
 /** HMI bundle entry point. Does nothing but start one daemon thread; never throws. */
 public class Activator implements BundleActivator {
-    static final String VERSION = "0.2";
+    static final String VERSION = "0.5";
 
     public void start(BundleContext ctx) throws Exception {
         try {

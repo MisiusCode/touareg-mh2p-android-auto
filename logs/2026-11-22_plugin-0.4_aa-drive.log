@@ -1,0 +1,240 @@
+6246 VWAndroidAutoNav 0.4 Activator.start
+11494 thread running, waiting 45s for the HMI
+56523 bootguard: start 1 of 3 armed
+56528 link check: propertyManager=true navbap=true list751=true list838=true dsiProxy=true
+56560 SNOOP other rg=0 navStatus=0 mapSwitch=0 kombiMap=2/0 bap=[6/0/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-0, 2<-0, 3<-]>]
+56573 AA turn road="towards Kriaušių gatvė" side=0 event=1 angle=0 num=0 valid=1
+56575 AA dist=0m time=0s valid=1
+56577 subscribed to Android Auto next-turn event and distance
+56579 wrapper: installed around de.vw.mib.bap.mqbab2.common.api.androidauto.AndroidAutoASLDataAdapter
+56608 KOMO cluster service connected
+56634 KOMO hud visible=false valid=1
+56638 KOMO hud service connected
+56643 KOMO hud viewType=0 valid=1 (1 manoeuvre view, 2 route info)
+56646 KOMO hud enabled=true valid=1
+56652 state stockRg=true focus=-1 recent=true haveManeuver=true ended=false live=true
+56654 ACTIVATE: routeGuidanceState=1
+56657 maneuver main=11 dir=0 sideArms=0
+56659 turnTo street="Kriaušių gatvė"
+56680 KOMO sent manoeuvre 11/0/Kriaušių gatvė/0 (total 2, answers hud 0 cluster 0)
+57587 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Kriaušių gatvė"/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+61686 AA turn road="Birutės g." side=2 event=3 angle=0 num=0 valid=1
+61745 maneuver main=13 dir=224 sideArms=2
+61761 turnTo street="Birutės g."
+61884 KOMO sent manoeuvre 13/224/Birutės g./100 (total 4, answers hud 0 cluster 0)
+62188 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/224/0/"à`"] turnTo="Birutės g."/"" dist~100 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-224, 2<-0, 3<-à`]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-224, 2<-0, 3<-à`]>]
+62575 AA turn road="towards Kriaušių gatvė" side=0 event=1 angle=0 num=0 valid=1
+62662 AA turn road="Birutės g." side=2 event=3 angle=0 num=0 valid=1
+69022 AA turn road="towards Kriaušių gatvė" side=0 event=1 angle=0 num=0 valid=1
+69263 KOMO sent manoeuvre 13/224/Birutės g./0 (total 8, answers hud 0 cluster 0)
+69631 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/224/0/"à`"] turnTo="Birutės g."/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-224, 2<-0, 3<-à`]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-224, 2<-0, 3<-à`]>]
+70234 maneuver main=11 dir=0 sideArms=0
+70240 turnTo street="Kriaušių gatvė"
+70270 KOMO sent manoeuvre 11/0/Kriaušių gatvė/0 (total 10, answers hud 0 cluster 0)
+70573 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Kriaušių gatvė"/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+75988 AA turn road="Birutės g." side=2 event=3 angle=0 num=0 valid=1
+76311 maneuver main=13 dir=224 sideArms=2
+76322 turnTo street="Birutės g."
+76507 KOMO sent manoeuvre 13/224/Birutės g./100 (total 14, answers hud 0 cluster 0)
+76823 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/224/0/"à`"] turnTo="Birutės g."/"" dist~100 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-224, 2<-0, 3<-à`]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-224, 2<-0, 3<-à`]>]
+83928 AA dist=105m time=18s valid=1
+85747 KOMO sent manoeuvre 13/224/Birutės g./90 (total 18, answers hud 0 cluster 0)
+86657 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/224/0/"à`"] turnTo="Birutės g."/"" dist~50 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-224, 2<-0, 3<-à`]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-224, 2<-0, 3<-à`]>]
+87029 KOMO sent manoeuvre 13/224/Birutės g./80 (total 20, answers hud 0 cluster 0)
+89183 KOMO sent manoeuvre 13/224/Birutės g./70 (total 22, answers hud 0 cluster 0)
+91039 KOMO sent manoeuvre 13/224/Birutės g./60 (total 24, answers hud 0 cluster 0)
+93199 KOMO sent manoeuvre 13/224/Birutės g./50 (total 26, answers hud 0 cluster 0)
+93913 AA dist=53m time=9s valid=1
+95058 KOMO sent manoeuvre 13/224/Birutės g./40 (total 28, answers hud 0 cluster 0)
+95360 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/224/0/"à`"] turnTo="Birutės g."/"" dist~0 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-224, 2<-0, 3<-à`]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-224, 2<-0, 3<-à`]>]
+97220 KOMO sent manoeuvre 13/224/Birutės g./30 (total 30, answers hud 0 cluster 0)
+98810 KOMO sent manoeuvre 13/224/Birutės g./20 (total 32, answers hud 0 cluster 0)
+100658 KOMO sent manoeuvre 13/224/Birutės g./10 (total 34, answers hud 0 cluster 0)
+102243 KOMO sent manoeuvre 13/224/Birutės g./0 (total 36, answers hud 0 cluster 0)
+103679 AA dist=722m time=91s valid=1
+103690 AA turn road="Turn right" side=2 event=4 angle=0 num=0 valid=1
+103747 maneuver main=28 dir=192 sideArms=0
+103756 turnTo street=""
+103840 KOMO sent manoeuvre 28/192//700 (total 38, answers hud 0 cluster 0)
+104039 AA dist=719m time=90s valid=1
+104144 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo=""/"" dist~700 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+107847 KOMO sent manoeuvre 28/192//650 (total 40, answers hud 0 cluster 0)
+109159 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo=""/"" dist~650 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+114001 AA dist=653m time=72s valid=1
+114713 KOMO sent manoeuvre 28/192//600 (total 44, answers hud 0 cluster 0)
+115351 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo=""/"" dist~600 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+124164 KOMO sent manoeuvre 28/192//550 (total 48, answers hud 0 cluster 0)
+125002 AA dist=596m time=59s valid=1
+125067 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo=""/"" dist~550 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+127265 AA turn road="towards Pakraščio g." side=0 event=1 angle=0 num=0 valid=1
+127269 AA dist=0m time=0s valid=1
+127493 maneuver main=13 dir=192 sideArms=2
+127519 KOMO sent manoeuvre 13/192//0 (total 50, answers hud 0 cluster 0)
+127627 AA dist=255m time=44s valid=1
+127628 AA turn road="Atgimimo g." side=1 event=4 angle=0 num=0 valid=1
+127822 maneuver main=13 dir=64 sideArms=2
+127824 turnTo street="Atgimimo g."
+127843 KOMO sent manoeuvre 13/64/Atgimimo g./250 (total 52, answers hud 0 cluster 0)
+128763 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/64/0/"@À"] turnTo="Atgimimo g."/"" dist~250 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>]
+128802 KOMO sent manoeuvre 13/64/Atgimimo g./200 (total 54, answers hud 0 cluster 0)
+130007 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/64/0/"@À"] turnTo="Atgimimo g."/"" dist~200 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>]
+135197 KOMO sent manoeuvre 13/64/Atgimimo g./150 (total 58, answers hud 0 cluster 0)
+135605 AA dist=192m time=35s valid=1
+136099 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/64/0/"@À"] turnTo="Atgimimo g."/"" dist~150 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>]
+141292 KOMO sent manoeuvre 13/64/Atgimimo g./100 (total 62, answers hud 0 cluster 0)
+142193 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/64/0/"@À"] turnTo="Atgimimo g."/"" dist~100 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>]
+146765 bootguard: clean run, counter removed
+146995 AA dist=121m time=26s valid=1
+148737 AA turn road="Pakraščio g." side=0 event=1 angle=0 num=0 valid=1
+148759 AA turn road="Turn right" side=2 event=4 angle=0 num=0 valid=1
+148762 AA dist=591m time=54s valid=1
+148881 maneuver main=28 dir=192 sideArms=0
+148882 turnTo street=""
+148911 KOMO sent manoeuvre 28/192//550 (total 66, answers hud 0 cluster 0)
+149544 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo=""/"" dist~550 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+152890 KOMO sent manoeuvre 28/192//500 (total 68, answers hud 0 cluster 0)
+153191 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo=""/"" dist~500 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+156251 KOMO sent manoeuvre 28/192//450 (total 70, answers hud 0 cluster 0)
+156853 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo=""/"" dist~450 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+157636 AA dist=475m time=43s valid=1
+159913 KOMO sent manoeuvre 28/192//400 (total 72, answers hud 0 cluster 0)
+160530 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo=""/"" dist~400 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+163274 KOMO sent manoeuvre 28/192//350 (total 74, answers hud 0 cluster 0)
+164175 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo=""/"" dist~350 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+166965 KOMO sent manoeuvre 28/192//300 (total 76, answers hud 0 cluster 0)
+167641 AA dist=334m time=31s valid=1
+167867 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo=""/"" dist~300 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+170908 maneuver main=13 dir=192 sideArms=2
+170936 KOMO sent manoeuvre 13/192//250 (total 78, answers hud 0 cluster 0)
+171540 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo=""/"" dist~250 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+174273 KOMO sent manoeuvre 13/192//200 (total 80, answers hud 0 cluster 0)
+175194 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo=""/"" dist~200 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+177578 AA dist=205m time=19s valid=1
+178236 KOMO sent manoeuvre 13/192//150 (total 82, answers hud 0 cluster 0)
+178837 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo=""/"" dist~150 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+182812 KOMO sent manoeuvre 13/192//100 (total 84, answers hud 0 cluster 0)
+183732 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo=""/"" dist~100 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+186829 KOMO sent manoeuvre 13/192//90 (total 86, answers hud 0 cluster 0)
+187434 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo=""/"" dist~50 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+187659 AA dist=84m time=7s valid=1
+187754 KOMO sent manoeuvre 13/192//80 (total 88, answers hud 0 cluster 0)
+188098 KOMO sent manoeuvre 13/192//70 (total 90, answers hud 0 cluster 0)
+188659 AA turn road="Pakraščio g." side=0 event=1 angle=0 num=0 valid=1
+188700 AA turn road="towards Obelų g." side=1 event=4 angle=0 num=0 valid=1
+188703 maneuver main=13 dir=64 sideArms=2
+188704 turnTo street="Obelų g."
+188748 KOMO sent manoeuvre 13/64/Obelų g./0 (total 92, answers hud 0 cluster 0)
+189078 KOMO sent manoeuvre 13/64/Obelų g./60 (total 94, answers hud 0 cluster 0)
+189987 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/64/0/"@À"] turnTo="Obelų g."/"" dist~50 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>]
+190017 KOMO sent manoeuvre 13/64/Obelų g./50 (total 96, answers hud 0 cluster 0)
+191292 KOMO sent manoeuvre 13/64/Obelų g./40 (total 98, answers hud 0 cluster 0)
+192230 KOMO sent manoeuvre 13/64/Obelų g./30 (total 100, answers hud 0 cluster 0)
+192543 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/64/0/"@À"] turnTo="Obelų g."/"" dist~0 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>]
+193170 KOMO sent manoeuvre 13/64/Obelų g./20 (total 102, answers hud 0 cluster 0)
+194733 KOMO sent manoeuvre 13/64/Obelų g./10 (total 104, answers hud 0 cluster 0)
+195966 KOMO sent manoeuvre 13/64/Obelų g./0 (total 106, answers hud 0 cluster 0)
+196628 AA dist=1m time=0s valid=1
+197498 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/64/0/"@À"] turnTo="Obelų g."/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>]
+197620 AA turn road="Obelų g." side=1 event=4 angle=0 num=0 valid=1
+197827 KOMO sent manoeuvre 13/64/Obelų g./100 (total 108, answers hud 0 cluster 0)
+198730 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/64/0/"@À"] turnTo="Obelų g."/"" dist~100 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>]
+205118 KOMO sent manoeuvre 13/64/Obelų g./90 (total 112, answers hud 0 cluster 0)
+206033 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/64/0/"@À"] turnTo="Obelų g."/"" dist~50 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>]
+206364 KOMO sent manoeuvre 13/64/Obelų g./80 (total 114, answers hud 0 cluster 0)
+206616 AA dist=81m time=7s valid=1
+207298 KOMO sent manoeuvre 13/64/Obelų g./70 (total 116, answers hud 0 cluster 0)
+207648 KOMO sent manoeuvre 13/64/Obelų g./60 (total 118, answers hud 0 cluster 0)
+208866 KOMO sent manoeuvre 13/64/Obelų g./50 (total 120, answers hud 0 cluster 0)
+209817 KOMO sent manoeuvre 13/64/Obelų g./40 (total 122, answers hud 0 cluster 0)
+210742 KOMO sent manoeuvre 13/64/Obelų g./30 (total 124, answers hud 0 cluster 0)
+211043 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/64/0/"@À"] turnTo="Obelų g."/"" dist~0 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>]
+211067 KOMO sent manoeuvre 13/64/Obelų g./20 (total 126, answers hud 0 cluster 0)
+212924 KOMO sent manoeuvre 13/64/Obelų g./10 (total 128, answers hud 0 cluster 0)
+213859 KOMO sent manoeuvre 13/64/Obelų g./0 (total 130, answers hud 0 cluster 0)
+215063 AA dist=604m time=65s valid=1
+215066 AA turn road="Birutės g." side=0 event=14 angle=0 num=0 valid=1
+215080 maneuver main=11 dir=0 sideArms=0
+215082 turnTo street="Birutės g."
+215109 KOMO sent manoeuvre 11/0/Birutės g./600 (total 132, answers hud 0 cluster 0)
+216045 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Birutės g."/"" dist~600 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+216384 KOMO sent manoeuvre 11/0/Birutės g./550 (total 134, answers hud 0 cluster 0)
+216623 AA dist=595m time=65s valid=1
+217286 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Birutės g."/"" dist~550 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+222187 KOMO sent manoeuvre 11/0/Birutės g./500 (total 138, answers hud 0 cluster 0)
+223409 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Birutės g."/"" dist~500 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+226594 AA dist=496m time=55s valid=1
+226749 KOMO sent manoeuvre 11/0/Birutės g./450 (total 140, answers hud 0 cluster 0)
+227070 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Birutės g."/"" dist~450 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+230718 KOMO sent manoeuvre 11/0/Birutės g./400 (total 142, answers hud 0 cluster 0)
+231938 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Birutės g."/"" dist~400 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+234671 KOMO sent manoeuvre 11/0/Birutės g./350 (total 144, answers hud 0 cluster 0)
+235590 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Birutės g."/"" dist~350 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+236594 AA dist=367m time=43s valid=1
+238336 KOMO sent manoeuvre 11/0/Birutės g./300 (total 146, answers hud 0 cluster 0)
+239239 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Birutės g."/"" dist~300 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+242284 KOMO sent manoeuvre 11/0/Birutės g./250 (total 148, answers hud 0 cluster 0)
+242886 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Birutės g."/"" dist~250 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+246622 AA dist=251m time=33s valid=1
+247142 KOMO sent manoeuvre 11/0/Birutės g./200 (total 150, answers hud 0 cluster 0)
+247747 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Birutės g."/"" dist~200 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+252311 KOMO sent manoeuvre 11/0/Birutės g./150 (total 152, answers hud 0 cluster 0)
+252641 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Birutės g."/"" dist~150 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+256628 AA dist=150m time=23s valid=1
+257204 KOMO sent manoeuvre 11/0/Birutės g./100 (total 154, answers hud 0 cluster 0)
+257506 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Birutės g."/"" dist~100 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+261778 KOMO sent manoeuvre 11/0/Birutės g./90 (total 156, answers hud 0 cluster 0)
+262393 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Birutės g."/"" dist~50 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+262727 KOMO sent manoeuvre 11/0/Birutės g./80 (total 158, answers hud 0 cluster 0)
+263671 KOMO sent manoeuvre 11/0/Birutės g./70 (total 160, answers hud 0 cluster 0)
+264896 KOMO sent manoeuvre 11/0/Birutės g./60 (total 162, answers hud 0 cluster 0)
+265845 KOMO sent manoeuvre 11/0/Birutės g./50 (total 164, answers hud 0 cluster 0)
+266604 AA dist=47m time=11s valid=1
+266768 KOMO sent manoeuvre 11/0/Birutės g./40 (total 166, answers hud 0 cluster 0)
+267370 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Birutės g."/"" dist~0 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+267733 KOMO sent manoeuvre 11/0/Birutės g./30 (total 168, answers hud 0 cluster 0)
+268668 KOMO sent manoeuvre 11/0/Birutės g./20 (total 170, answers hud 0 cluster 0)
+270210 KOMO sent manoeuvre 11/0/Birutės g./10 (total 172, answers hud 0 cluster 0)
+272044 KOMO sent manoeuvre 11/0/Birutės g./0 (total 174, answers hud 0 cluster 0)
+276058 AA turn road="Birutės g." side=2 event=4 angle=0 num=0 valid=1
+276271 maneuver main=13 dir=192 sideArms=2
+276299 KOMO sent manoeuvre 13/192/Birutės g./100 (total 176, answers hud 0 cluster 0)
+277200 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="Birutės g."/"" dist~100 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+281015 AA dist=105m time=21s valid=1
+282696 KOMO sent manoeuvre 13/192/Birutės g./90 (total 180, answers hud 0 cluster 0)
+283299 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="Birutės g."/"" dist~50 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+284838 KOMO sent manoeuvre 13/192/Birutės g./80 (total 182, answers hud 0 cluster 0)
+286657 KOMO sent manoeuvre 13/192/Birutės g./70 (total 184, answers hud 0 cluster 0)
+288192 KOMO sent manoeuvre 13/192/Birutės g./60 (total 186, answers hud 0 cluster 0)
+289730 KOMO sent manoeuvre 13/192/Birutės g./50 (total 188, answers hud 0 cluster 0)
+291010 AA dist=49m time=10s valid=1
+291272 KOMO sent manoeuvre 13/192/Birutės g./40 (total 190, answers hud 0 cluster 0)
+291874 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="Birutės g."/"" dist~0 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+292815 KOMO sent manoeuvre 13/192/Birutės g./30 (total 192, answers hud 0 cluster 0)
+294351 KOMO sent manoeuvre 13/192/Birutės g./20 (total 194, answers hud 0 cluster 0)
+295284 KOMO sent manoeuvre 13/192/Birutės g./10 (total 196, answers hud 0 cluster 0)
+296836 KOMO sent manoeuvre 13/192/Birutės g./0 (total 198, answers hud 0 cluster 0)
+298055 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="Birutės g."/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+298141 AA turn road="Birutės g. 40" side=2 event=19 angle=0 num=0 valid=1
+298357 maneuver main=11 dir=0 sideArms=0
+298359 turnTo street="Birutės g. 40"
+298385 KOMO sent manoeuvre 11/0/Birutės g. 40/20 (total 200, answers hud 0 cluster 0)
+299290 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Birutės g. 40"/"" dist~0 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+303842 state stockRg=false focus=-1 recent=true haveManeuver=true ended=false live=true
+388795 state stockRg=false focus=-1 recent=false haveManeuver=true ended=false live=false
+390016 DEACTIVATE (guidance ended)
+390043 KOMO sent clear (total 236, answers hud 0 cluster 0)
+391245 SNOOP other rg=0 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[] turnTo=""/"" dist~0 unit=0 bar=0 L751=0[] L838=0[]
+6241 VWAndroidAutoNav 0.4 Activator.start
+11432 thread running, waiting 45s for the HMI
+56504 bootguard: start 1 of 3 armed
+56508 link check: propertyManager=true navbap=true list751=true list838=true dsiProxy=true
+56528 SNOOP other rg=0 navStatus=0 mapSwitch=0 kombiMap=2/0 bap=[6/0/0/""] turnTo=""/"" dist~0 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-6, 1<-0, 2<-0, 3<-]>]
+56541 subscribed to Android Auto next-turn event and distance
+56546 wrapper: installed around de.vw.mib.bap.mqbab2.common.api.androidauto.AndroidAutoASLDataAdapter
+56559 KOMO cluster service connected
+56568 KOMO hud service connected
+56570 state stockRg=false focus=-1 recent=true haveManeuver=false ended=true live=false
+56574 KOMO hud visible=false valid=1
+56575 KOMO hud viewType=0 valid=1 (1 manoeuvre view, 2 route info)
+56577 KOMO hud enabled=true valid=1
+90127 state stockRg=false focus=-1 recent=false haveManeuver=false ended=true live=false

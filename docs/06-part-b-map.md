@@ -2,6 +2,11 @@
 
 Goal: the phone's map (Google Maps, Waze) drawn in the cluster in place of the factory map.
 
+Related finding (2026-11-22): the HUD arrow is also a picture (KOMO view, streamed to the
+HUD) and only the factory navigation fills it. If the plugin's tries (0.5) fail, an Android
+Auto arrow on the HUD needs the same kind of work as this part: rendering our own picture
+into a display stream.
+
 ## Pieces
 
 | Piece | From | State |

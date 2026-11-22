@@ -18,7 +18,8 @@ public class Harness {
             public Object invoke(Object p, Method m, Object[] a) throws Throwable {
                 String n = m.getName();
                 if (n.equals("getDSIProxy")) return proxy(DSIProxy.class, "dsiProxy");
-                if (n.equals("getService")) return proxy(DSIAndroidAuto2.class, "aaService");
+                if (n.equals("getService")) return a[1] == DSIAndroidAuto2.class ? proxy(DSIAndroidAuto2.class, "aaService") : proxy((Class) a[1], "komo" + a[2]);
+                if (n.equals("setNotification") && tag.startsWith("komo")) { Rec.add(tag + ".setNotification"); return null; }
                 if (n.equals("setNotification")) { sub = (DSIAndroidAuto2Listener) a[1]; Rec.add("aa.setNotification " + java.util.Arrays.toString((int[]) a[0])); return null; }
                 if (n.equals("hashCode")) return new Integer(1);
                 if (n.equals("getNavigationService")) return proxy(de.vw.mib.bap.mqbab2.common.api.navigation.NavigationService.class, "nav");
@@ -61,16 +62,16 @@ public class Harness {
         say("phone starts guidance; cluster asks 'is phone guidance active?' -> " + APIFactory.current().isAndroidAutoRouteGuidanceActive() + " (stock would say " + true + ")");
         stockRg = true;
         Thread.sleep(1500);
-        say("depart towards ..., then turn right in 250 m");
-        sub.updateNavigationNextTurnEvent("towards Kriaušių gatvė", 0, 1, 0, 0, 1);
+        say("far turn right (720 m), then near (240 m)");
+        sub.updateNavigationNextTurnEvent("Trumpoji g.", 2, 4, 0, 0, 1);
+        sub.updateNavigationNextTurnDistance(720, 60, 1);
         Thread.sleep(2500);
-        sub.updateNavigationNextTurnEvent("Head east", 0, 1, 0, 0, 1);
-        Thread.sleep(200);
-        sub.updateNavigationNextTurnEvent("Turn right", 2, 4, 0, 0, 1);
-        sub.updateNavigationNextTurnDistance(250, 20, 1);
-        Thread.sleep(2500);
-        sub.updateNavigationNextTurnDistance(120, 9, 1);
-        Thread.sleep(1200);
+        sub.updateNavigationNextTurnDistance(240, 20, 1);
+        Thread.sleep(1500);
+        say("straight (event 14, side 0)");
+        sub.updateNavigationNextTurnEvent("towards Slyv\u0173 g.", 0, 14, 0, 0, 1);
+        sub.updateNavigationNextTurnDistance(90, 9, 1);
+        Thread.sleep(1500);
         say("placeholder event (valid=0) must be ignored");
         sub.updateNavigationNextTurnEvent("", 0, 0, 0, 0, 0);
         Thread.sleep(1200);

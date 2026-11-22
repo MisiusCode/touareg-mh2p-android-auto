@@ -17,10 +17,10 @@ firmware version without redoing the checks in `docs/03-verification.md`.
 | Part | What | State |
 |---|---|---|
 | Dumps | Read-only SD cards that copy firmware files off the unit | Done, 4 cards, all ran on the car |
-| A | Turn data (arrow, distance, street) from Android Auto to cluster and HUD | Plugin 0.1 ran on the car: **street and distance show on the HUD, the arrow does not**. 0.2 (adds a recorder) is built, not yet run |
+| A | Turn data (arrow, distance, street) from Android Auto to cluster and HUD | 0.1 to 0.4 ran on the car: **street and distance show on the HUD, the arrow does not**. The HUD arrow turned out to be a picture rendered for the factory navigation only. 0.5 (automatic tries on that picture service) is built, not yet run |
 | B | The phone's live map in the cluster | Not started. Design and risks in `docs/06-part-b-map.md` |
 
-The open problem is the missing HUD arrow. See `docs/05-test-log.md`.
+The open problem is the missing HUD arrow. See `docs/05-test-log.md`, "Arrow investigation".
 
 ## Layout
 
@@ -35,7 +35,7 @@ The open problem is the missing HUD arrow. See `docs/05-test-log.md`.
 | `docs/07-how-to.md` | Making a card, running it, converting the HMI image, building the plugin |
 | `dump-cards/` | Scripts of the four dump cards |
 | `plugin/` | Plugin source, installer, PC test harness, built jars |
-| `logs/` | Install log and the plugin log of the first drive |
+| `logs/` | Install log and plugin logs of the drives, one file per plugin version / test |
 
 ## Not in this repository, on purpose
 

@@ -1,32 +1,42 @@
-VW_AA_ClusterNav 0.2 - Android Auto turn data on the cluster and HUD
+VW_AA_ClusterNav 0.5 - Android Auto turn data on the cluster and HUD
 ====================================================================
 VW Touareg CR, firmware MH2p_ER_VWG36_P2869 only. Experimental.
 
-New in 0.2
- - records what the cluster service sees as navigation data, from the factory
-   navigation as well as from this plugin (to find out why the HUD draws no arrow)
- - street line: "towards X" becomes "X"; texts that are instructions and not
-   streets ("Turn right", "Head east") are left out
- - no more brief flicker to "continue" before each new instruction
+New in 0.5 (automatic tries - low odds, but the log will be conclusive)
+ Recorded with 0.4: with a factory route the HUD picture service reports
+ "visible" and draws the arrow; with Android Auto guidance it stays invisible
+ and ignores what the plugin sends. 0.5 tries the remaining switches of that
+ service by itself while Android Auto guidance runs, one after the other:
+   1 plain element (30 s)      4 view off and on (20 s)
+   2 list form (20 s)          5 five other view styles (10 s each)
+   3 declare visible (20 s)    6 arrow mode for the cluster channel (20 s)
+ then a 60 s pause and rounds 2 and 3 (without try 6). For every try the log
+ says whether the service reacted. If the HUD view turns visible, the plugin
+ stops at that try and keeps it.
 
-Install (replaces 0.1, same steps)
+Install (replaces 0.4, same steps)
  1. Format the card FAT32, unzip so Data, Meta, Mods and Logs are in the ROOT.
  2. Engine running, phone unplugged, insert, wait for the prompt to remove.
  3. Logs/VW_AA_ClusterNav.log must end with "done: installed".
 
-Recording drive (card OUT)
- A. Factory navigation: phone unplugged. Enter a nearby destination in the
-    car's own navigation, start guidance, drive two or three turns while the
-    HUD shows its arrows. Then stop the factory guidance.
- B. Android Auto: connect the phone, start Google Maps guidance, drive two
-    or three turns.
- Then park, wait half a minute, unplug the phone, insert the card and let it
- run. It copies the log to Logs/vwaa_unit. Share the Logs folder.
+Test drive (card OUT)
+ Android Auto with Google Maps, guidance running for at least 10 minutes
+ without a break (a longer route; the tries need about 9 minutes). Glance at
+ the HUD and cluster now and then: an arrow or anything unusual? Then park,
+ wait half a minute, unplug the phone, run the card again, share the Logs.
+
+ Tries 5 and 6 change how the factory side is set up (view style, guidance
+ display mode). The style is put back by the plugin; both are set again by
+ the unit at its next start. If something looks different afterwards with the
+ factory navigation, let the car go to sleep once (locked, about 10 minutes).
+
+ Markers on a USB stick: vwaa_noprobe.txt = plain element only,
+ vwaa_nokomo.txt = stop the new part (street and distance stay),
+ vwaa_off.txt = stop everything.
 
 Switch off without uninstalling: USB stick with an empty vwaa_off.txt.
 Uninstall: empty file Mods/VW_AA_ClusterNav/uninstall.txt, run the card again.
-Other markers (empty files on a USB stick): vwaa_nohide, vwaa_no838,
-vwaa_nosnoop, vwaa_reset.
+Other markers: vwaa_plain, vwaa_nohide, vwaa_no838, vwaa_nosnoop, vwaa_reset.
 
 Logs/_ModKit_Update.log contains "error: servicemgrmibhigh.sh not found".
 That is intended (keeps the unit's existing startup wrapper untouched).

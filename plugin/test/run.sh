@@ -10,3 +10,12 @@ rm -rf cls && mkdir cls
 : > /tmp/vwaa.log; rm -f /tmp/vwaa_off
 "$JDK8/bin/java" -Dfile.encoding=UTF-8 -cp "cls:../out:$OSGI_JAR:$LSD_JAR" test.Harness
 echo "--- plugin log: /tmp/vwaa.log"
+
+# The HUD picture-service try sequence (0.5) on its own, simulated time, a few seconds:
+"$JDK8/bin/javac" -encoding UTF-8 -nowarn -cp "cls:../out:$OSGI_JAR:$LSD_JAR" -d cls komo/vwaa/KomoSim.java
+: > /tmp/vwaa.log
+"$JDK8/bin/java" -Dfile.encoding=UTF-8 -cp "cls:../out:$OSGI_JAR:$LSD_JAR" vwaa.KomoSim        # no reaction: full 3 rounds
+grep PROBE /tmp/vwaa.log | tail -3
+: > /tmp/vwaa.log
+"$JDK8/bin/java" -Dfile.encoding=UTF-8 -cp "cls:../out:$OSGI_JAR:$LSD_JAR" vwaa.KomoSim hit    # HUD turns visible at 60 s
+grep PROBE /tmp/vwaa.log
