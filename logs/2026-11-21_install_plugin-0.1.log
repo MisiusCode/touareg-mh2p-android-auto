@@ -1,0 +1,29 @@
+----- Start installing VW_AA_ClusterNav -----
+VW_AA_ClusterNav install, unit MH2p_ER_VWG36_P2869
+unit has the stock plugin list
+stock list saved on the card
+stock list saved on the unit
+total 521
+-rw-r--r--   1 root      root         251168 Aug 23  2021 GEM.jar
+-rw-r--r--   1 root      root          14922 Nov 21  2026 VWAndroidAutoNav.jar
+plugin list updated:
+92:Bundle.Startup.Lateload = 61,62,95,97
+406:Bundle.Name.97 = VWAndroidAutoNav
+407:Bundle.Activator.97 = vwaa.Activator
+modkit hook skipped ('error: servicemgrmibhigh.sh not found' in _ModKit_Update.log is intended)
+done: installed
+----- Done installing VW_AA_ClusterNav -----
+----- Start installing VW_AA_ClusterNav -----
+VW_AA_ClusterNav install, unit MH2p_ER_VWG36_P2869
+collected vwaa.log
+unit already has this mod: using the stock list saved on the unit
+total 521
+-rw-r--r--   1 root      root         251168 Aug 23  2021 GEM.jar
+-rw-r--r--   1 root      root          14922 Nov 21  2026 VWAndroidAutoNav.jar
+plugin list updated:
+92:Bundle.Startup.Lateload = 61,62,95,97
+406:Bundle.Name.97 = VWAndroidAutoNav
+407:Bundle.Activator.97 = vwaa.Activator
+modkit hook skipped ('error: servicemgrmibhigh.sh not found' in _ModKit_Update.log is intended)
+done: installed
+----- Done installing VW_AA_ClusterNav -----

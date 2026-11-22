@@ -1,0 +1,226 @@
+6985 VWAndroidAutoNav 0.1 Activator.start
+10944 thread running, waiting 45s for the HMI
+56110 bootguard: start 1 of 3 armed
+56113 link check: propertyManager=true navbap=true list751=true list838=true dsiProxy=true
+56134 subscribed to Android Auto next-turn event and distance
+56137 AA dist=0m time=-1s valid=1
+56139 wrapper: installed around de.vw.mib.bap.mqbab2.common.api.androidauto.AndroidAutoASLDataAdapter
+56140 state stockRg=true focus=-1 recent=true haveManeuver=false ended=true live=false
+77266 state stockRg=false focus=-1 recent=true haveManeuver=false ended=true live=false
+86916 state stockRg=true focus=-1 recent=true haveManeuver=false ended=true live=false
+86962 AA turn road="towards Kriaušių gatvė" side=0 event=1 angle=0 num=0 valid=1
+87220 state stockRg=true focus=-1 recent=true haveManeuver=true ended=false live=true
+87223 ACTIVATE: routeGuidanceState=1
+87225 maneuver main=11 dir=0
+87229 turnTo street="towards Kriaušių gatvė"
+125511 state stockRg=false focus=-1 recent=true haveManeuver=true ended=false live=true
+135161 state stockRg=true focus=-1 recent=true haveManeuver=true ended=false live=true
+135266 AA turn road="towards Kriaušių gatvė" side=0 event=1 angle=0 num=0 valid=1
+146301 bootguard: clean run, counter removed
+190874 AA turn road="Birutės g." side=2 event=3 angle=0 num=0 valid=1
+190919 maneuver main=13 dir=224
+190921 turnTo street="Birutės g."
+199764 AA dist=67m time=10s valid=1
+210822 AA dist=18m time=3s valid=1
+214841 AA dist=720m time=91s valid=1
+214844 AA turn road="Turn right" side=2 event=4 angle=0 num=0 valid=1
+215056 maneuver main=13 dir=192
+215057 turnTo street="Turn right"
+221392 AA dist=686m time=81s valid=1
+231473 AA dist=620m time=65s valid=1
+240022 AA turn road="towards Naujosios Sodybos g." side=0 event=1 angle=0 num=0 valid=1
+240024 AA dist=0m time=0s valid=1
+240067 maneuver main=11 dir=0
+240069 turnTo street="towards Naujosios Sodybos g."
+240480 AA turn road="Trumpoji g." side=2 event=4 angle=0 num=0 valid=1
+240482 AA dist=719m time=94s valid=1
+240671 maneuver main=13 dir=192
+240673 turnTo street="Trumpoji g."
+243773 AA dist=696m time=91s valid=1
+253770 AA dist=613m time=82s valid=1
+263790 AA dist=529m time=73s valid=1
+273774 AA dist=437m time=63s valid=1
+289170 AA turn road="Head east" side=0 event=1 angle=0 num=0 valid=1
+289171 AA dist=0m time=0s valid=1
+289259 maneuver main=11 dir=0
+289261 turnTo street="Head east"
+289497 AA turn road="towards Konduktorių g." side=1 event=4 angle=0 num=0 valid=1
+289571 maneuver main=13 dir=64
+289572 turnTo street="towards Konduktorių g."
+297523 AA turn road="Obelų g." side=1 event=4 angle=0 num=0 valid=1
+297526 AA dist=291m time=32s valid=1
+297754 turnTo street="Obelų g."
+298421 AA dist=285m time=32s valid=1
+308349 AA dist=191m time=21s valid=1
+339429 AA dist=140m time=15s valid=1
+349182 AA dist=53m time=4s valid=1
+358666 AA turn road="Birutės g." side=0 event=1 angle=0 num=0 valid=1
+358732 AA turn road="towards Slyvų g." side=0 event=14 angle=0 num=0 valid=1
+358939 maneuver main=15 dir=0
+358940 turnTo street="towards Slyvų g."
+360527 AA dist=96m time=20s valid=1
+370491 AA dist=36m time=8s valid=1
+376630 AA turn road="Slyvų g." side=1 event=4 angle=0 num=0 valid=1
+376718 maneuver main=13 dir=64
+376722 turnTo street="Slyvų g."
+378504 AA turn road="towards Birutės g." side=1 event=4 angle=0 num=0 valid=1
+378532 turnTo street="towards Birutės g."
+380042 state stockRg=false focus=-1 recent=true haveManeuver=true ended=false live=true
+394506 state stockRg=true focus=-1 recent=true haveManeuver=true ended=false live=true
+395338 AA dist=100m time=22s valid=1
+395341 AA turn road="Birutės g." side=1 event=6 angle=0 num=0 valid=1
+395408 maneuver main=25 dir=64
+395409 turnTo street="Birutės g."
+402346 state stockRg=false focus=-1 recent=true haveManeuver=true ended=false live=true
+491484 state stockRg=false focus=-1 recent=false haveManeuver=true ended=false live=false
+492685 DEACTIVATE (guidance ended)
+6289 VWAndroidAutoNav 0.1 Activator.start
+11658 thread running, waiting 45s for the HMI
+56676 bootguard: start 1 of 3 armed
+56680 link check: propertyManager=true navbap=true list751=true list838=true dsiProxy=true
+56701 subscribed to Android Auto next-turn event and distance
+56715 AA turn road="towards Kriaušių gatvė" side=0 event=1 angle=0 num=0 valid=1
+56717 AA dist=0m time=0s valid=1
+56721 wrapper: installed around de.vw.mib.bap.mqbab2.common.api.androidauto.AndroidAutoASLDataAdapter
+56724 state stockRg=true focus=-1 recent=true haveManeuver=true ended=false live=true
+56726 ACTIVATE: routeGuidanceState=1
+56729 maneuver main=11 dir=0
+56731 turnTo street="towards Kriaušių gatvė"
+93014 AA turn road="Birutės g." side=2 event=3 angle=0 num=0 valid=1
+93295 maneuver main=13 dir=224
+93298 turnTo street="Birutės g."
+102517 AA dist=73m time=11s valid=1
+112506 AA dist=7m time=1s valid=1
+114006 AA dist=721m time=92s valid=1
+114008 AA turn road="Turn right" side=2 event=4 angle=0 num=0 valid=1
+114216 maneuver main=13 dir=192
+114219 turnTo street="Turn right"
+122511 AA dist=666m time=76s valid=1
+132531 AA dist=609m time=62s valid=1
+137585 AA turn road="towards Naujosios Sodybos g." side=0 event=1 angle=0 num=0 valid=1
+137586 AA dist=0m time=0s valid=1
+137770 maneuver main=11 dir=0
+137777 turnTo street="towards Naujosios Sodybos g."
+137999 AA turn road="Trumpoji g." side=2 event=4 angle=0 num=0 valid=1
+138001 AA dist=716m time=92s valid=1
+138079 maneuver main=13 dir=192
+138082 turnTo street="Trumpoji g."
+144505 AA dist=652m time=85s valid=1
+146842 bootguard: clean run, counter removed
+154550 AA dist=535m time=72s valid=1
+164485 AA dist=410m time=58s valid=1
+174483 AA dist=286m time=44s valid=1
+184475 AA dist=204m time=29s valid=1
+194468 AA dist=90m time=12s valid=1
+205657 AA turn road="Geležinkelio g." side=2 event=4 angle=0 num=0 valid=1
+205659 AA dist=550m time=73s valid=1
+205697 turnTo street="Geležinkelio g."
+215562 AA dist=464m time=61s valid=1
+225579 AA turn road="towards Bažnyčios g." side=0 event=1 angle=0 num=0 valid=1
+225581 AA dist=0m time=0s valid=1
+225588 maneuver main=11 dir=0
+225589 turnTo street="towards Bažnyčios g."
+225614 AA dist=457m time=87s valid=1
+225619 AA turn road="Pakalnės g." side=1 event=4 angle=0 num=0 valid=1
+225891 maneuver main=13 dir=64
+225895 turnTo street="Pakalnės g."
+226589 AA dist=450m time=87s valid=1
+236537 AA dist=343m time=74s valid=1
+246546 AA dist=230m time=56s valid=1
+256525 AA dist=121m time=28s valid=1
+266534 AA dist=16m time=3s valid=1
+270009 AA turn road="Mokyklos g." side=2 event=4 angle=0 num=0 valid=1
+270205 maneuver main=13 dir=192
+270206 turnTo street="Mokyklos g."
+276531 AA dist=97m time=13s valid=1
+287609 AA turn road="Fabriko g." side=1 event=4 angle=0 num=0 valid=1
+287611 AA dist=256m time=38s valid=1
+287697 maneuver main=13 dir=64
+287698 turnTo street="Fabriko g."
+297987 AA dist=167m time=26s valid=1
+307968 AA dist=47m time=8s valid=1
+316634 AA dist=353m time=35s valid=1
+316635 AA turn road="Klevų al." side=2 event=13 angle=180 num=2 valid=1
+316662 maneuver main=21 dir=0
+316664 turnTo street="Klevų al."
+321945 AA dist=332m time=33s valid=1
+331962 AA dist=216m time=21s valid=1
+341955 AA dist=96m time=10s valid=1
+351573 AA dist=5m time=0s valid=1
+352642 AA turn road="Dzūkų g." side=2 event=13 angle=270 num=3 valid=1
+352900 maneuver main=21 dir=64
+352903 turnTo street="Dzūkų g."
+361600 AA dist=109m time=10s valid=1
+378712 AA turn road="A19 Kirtimų g." side=2 event=7 angle=0 num=0 valid=1
+378716 AA dist=6828m time=522s valid=1
+378845 maneuver main=14 dir=192
+378847 turnTo street="A19 Kirtimų g."
+380669 AA dist=6816m time=520s valid=1
+390659 AA dist=6753m time=510s valid=1
+394706 AA turn road="Dzūkų g." side=2 event=13 angle=270 num=3 valid=1
+394707 AA dist=5m time=0s valid=1
+394827 maneuver main=21 dir=64
+394829 turnTo street="Dzūkų g."
+397288 AA turn road="Klevų al." side=0 event=1 angle=0 num=0 valid=1
+397550 maneuver main=11 dir=0
+397555 turnTo street="Klevų al."
+397754 AA turn road="Klevų al." side=2 event=13 angle=360 num=4 valid=1
+397857 maneuver main=21 dir=128
+401961 AA dist=86m time=12s valid=1
+411695 AA turn road="Dzūkų g." side=2 event=13 angle=270 num=3 valid=1
+411697 AA dist=217m time=26s valid=1
+411728 maneuver main=21 dir=64
+411733 turnTo street="Dzūkų g."
+415947 AA dist=190m time=21s valid=1
+417720 AA turn road="Galvės g." side=1 event=4 angle=0 num=0 valid=1
+417723 AA dist=2805m time=248s valid=1
+417757 maneuver main=13 dir=64
+417759 turnTo street="Galvės g."
+425947 AA dist=2708m time=237s valid=1
+434347 AA turn road="towards Pietų g." side=0 event=1 angle=0 num=0 valid=1
+434350 AA dist=0m time=0s valid=1
+434359 maneuver main=11 dir=0
+434376 turnTo street="towards Pietų g."
+434685 AA turn road="Obelų g." side=2 event=4 angle=0 num=0 valid=1
+434690 AA dist=788m time=68s valid=1
+434977 maneuver main=13 dir=192
+434979 turnTo street="Obelų g."
+435623 AA dist=778m time=67s valid=1
+445634 AA dist=663m time=57s valid=1
+455619 AA dist=537m time=46s valid=1
+465623 AA dist=394m time=34s valid=1
+475723 AA dist=242m time=20s valid=1
+485699 AA dist=95m time=7s valid=1
+496791 AA dist=593m time=63s valid=1
+496795 AA turn road="Birutės g." side=0 event=14 angle=0 num=0 valid=1
+496798 maneuver main=15 dir=0
+496805 turnTo street="Birutės g."
+496948 AA dist=592m time=63s valid=1
+506954 AA dist=490m time=54s valid=1
+516969 AA dist=362m time=43s valid=1
+526975 AA dist=234m time=32s valid=1
+536975 AA dist=110m time=19s valid=1
+547016 AA dist=6m time=1s valid=1
+548715 AA turn road="Birutės g." side=2 event=4 angle=0 num=0 valid=1
+548966 maneuver main=13 dir=192
+558671 AA dist=75m time=15s valid=1
+568675 AA dist=10m time=2s valid=1
+571852 AA turn road="Birutės g." side=2 event=19 angle=0 num=0 valid=1
+571862 maneuver main=11 dir=0
+576993 state stockRg=false focus=-1 recent=true haveManeuver=true ended=false live=true
+582390 AA turn road="towards Kriaušių gatvė" side=0 event=1 angle=0 num=0 valid=1
+582408 AA turn road="towards Birutės g." side=1 event=4 angle=0 num=0 valid=1
+582416 state stockRg=true focus=-1 recent=true haveManeuver=true ended=false live=true
+582419 maneuver main=13 dir=64
+582421 turnTo street="towards Birutės g."
+587796 AA turn road="Make a U-turn" side=1 event=6 angle=0 num=0 valid=1
+587849 maneuver main=25 dir=64
+587850 turnTo street="Make a U-turn"
+591747 AA dist=20m time=11s valid=1
+592792 AA turn road="Head west" side=0 event=1 angle=0 num=0 valid=1
+592822 AA turn road="Make a U-turn" side=1 event=6 angle=0 num=0 valid=1
+606820 AA turn road="Birutės g." side=2 event=3 angle=0 num=0 valid=1
+606874 maneuver main=13 dir=224
+606875 turnTo street="Birutės g."
+607746 AA dist=150m time=25s valid=1
+615323 state stockRg=false focus=-1 recent=true haveManeuver=true ended=false live=true

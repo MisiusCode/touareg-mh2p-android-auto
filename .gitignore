@@ -1,0 +1,11 @@
+# firmware and car-specific data never go in here
+*.jxe
+lsd*.jar
+app.tar
+Dump*/
+private/
+*.fecs
+persistence.sqlite
+# build output
+plugin/out/
+plugin/test/cls/
