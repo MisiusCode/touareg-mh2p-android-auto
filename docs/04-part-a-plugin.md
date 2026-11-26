@@ -168,6 +168,15 @@ and manages the stream rate; the content comes from the factory navigation below
   is set back to 5. If the HUD view reports `visible=true`, the sequence stops in the
   current step and keeps it (`PROBE HIT`). Each guidance session starts again from step 1.
 
+### 0.6 and 0.7.1
+
+- **0.6**: the HUD picture experiment is off unless a `vwaa_probe` marker is present (0.5
+  repeated its style changes on every drive). Persistent log in two files used in turn
+  (`vwaa.log`, `vwaa_2.log`, 200 KB each) instead of one that restarts when full.
+- **0.7.1**: `DispEvents`, a listen-only `DSIDisplayManagementListener` (logs layers and
+  active context per display, on change); `vwaa_keep.log` for the lines worth keeping across
+  many drives; the install card writes `Logs/partb_info.txt` (read-only file lists, df).
+
 ## The "mobile device" message
 
 `QuietAndroidAuto` replaces `APIFactory.androidAutoService`. Its
@@ -191,8 +200,9 @@ Empty files in `/tmp` or in the root of a USB stick / SD card (`/fs/usb0_0`, `/f
 | `vwaa_nosnoop` | Recorder off |
 | `vwaa_reset` | Clear the self-disable counter at the next start |
 | `vwaa_plain` | 0.3+: write the arrow in the 0.2 form (no prepare symbols, no side streets) |
-| `vwaa_nokomo` | 0.4+: do not send to the HUD picture service, only listen |
-| `vwaa_noprobe` | 0.5: send the plain element only, skip the try sequence |
+| `vwaa_nokomo` | 0.4 / 0.5 only: do not send to the HUD picture service, only listen |
+| `vwaa_noprobe` | 0.5+: send the plain element only, skip the try sequence |
+| `vwaa_probe` | 0.6+: run the HUD picture experiment (off by default) |
 
 ## Self-disable
 

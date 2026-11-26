@@ -12,15 +12,22 @@ two open-source projects, tested in simulation on a PC, and then tried on exactl
 A mistake can leave the head unit needing service tools. Do not reuse on another
 firmware version without redoing the checks in `docs/03-verification.md`.
 
-## Status (2026-11-22)
+## Status (2026-11-26)
 
 | Part | What | State |
 |---|---|---|
 | Dumps | Read-only SD cards that copy firmware files off the unit | Done, 4 cards, all ran on the car |
-| A | Turn data (arrow, distance, street) from Android Auto to cluster and HUD | 0.1 to 0.4 ran on the car: **street and distance show on the HUD, the arrow does not**. The HUD arrow turned out to be a picture rendered for the factory navigation only. 0.5 (automatic tries on that picture service) is built, not yet run |
-| B | The phone's live map in the cluster | Not started. Design and risks in `docs/06-part-b-map.md` |
+| A | Turn data (arrow, distance, street) from Android Auto to cluster and HUD | **Closed at street name + distance on the HUD.** 0.1 to 0.5 ran on the car; the HUD arrow is a picture stream that only the factory navigation fills, and 0.5 showed it cannot be fed through existing services. Current card: 0.7.1 (everyday version + read-only recorders for Part B) |
+| B | The phone's live map in the cluster | Planning; desk work started. Both halves now exist in public source (Android Auto hook: fifthBro; renderer on P2869: Touarego). Plan and stages in `docs/06-part-b-map.md` |
 
-The open problem is the missing HUD arrow. See `docs/05-test-log.md`, "Arrow investigation".
+## Next steps
+
+1. Install the 0.7.1 card (`plugin/dist/VWAndroidAutoNav-0.7.1.jar` + `plugin/installer/`), then drive normally.
+2. Once, with Android Auto guidance running: page the cluster between map and navigation view, press VIEW, note whether the navigation view shows an arrow.
+3. Desk: get the QNX cross compiler running, build the hook in listen-only mode, compare its object layouts with the car's `gal` / `libautoreceiver.so`.
+4. B2 card (wrapper + listen-only hook) with its rollback card; it also brings back the 0.7.1 logs.
+
+Why there is no HUD arrow: `docs/05-test-log.md`, "Arrow investigation".
 
 ## Layout
 

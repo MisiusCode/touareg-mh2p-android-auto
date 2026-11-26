@@ -97,6 +97,21 @@ else
     skip_modkit_hook; exit 0
 fi
 
+# 5b) Part B preparation: read-only facts about the unit, written to the card. Nothing on the
+#     unit is changed here and a failure of any line is ignored.
+(
+    echo "== df"; df -k "$R/mnt/app" "$R/mnt/ota" "$R/tmp"
+    echo "== apps"; ls -la "$R/mnt/app/eso/bin/apps"
+    echo "== apps/cluster"; ls -la "$R/mnt/app/eso/bin/apps/cluster"
+    echo "== eso/bin"; ls -la "$R/mnt/app/eso/bin"
+    echo "== eso/lib"; ls -la "$R/mnt/app/eso/lib"
+    echo "== jars"; ls -la "$JD"
+    echo "== screen library"; ls -la "$R"/usr/lib/libscreen* "$R"/lib/libscreen* "$R"/mnt/app/armle/usr/lib/libscreen* "$R"/mnt/app/armle/lib/libscreen* "$R"/proc/boot/libscreen* "$R"/ifs/lib*/libscreen* "$R"/ifs/usr/lib/libscreen*
+    echo "== nvmedia"; ls -la "$R"/mnt/app/armle/usr/lib/libnvmedia* "$R"/usr/lib/libnvmedia* "$R"/mnt/app/armle/lib/libnvmedia*
+    echo "== ota"; ls -la "$R/mnt/ota"
+) > "$MEDIA_PATH/Logs/partb_info.txt" 2>&1
+echo "part B info written"
+
 # 6) fresh start for the self-disable counter
 rm -f "$ULOG/vwaa_boot"
 sync

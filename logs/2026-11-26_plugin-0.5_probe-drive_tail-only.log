@@ -1,0 +1,192 @@
+561853 PROBE 5-style-6 end: SERVICE REACTED | hud[visible=false type=0 enabled=true answers=17] cluster[visible=false type=-1 enabled=false answers=0] sent=616
+561860 PROBE HUD view style back to 5
+561866 KOMO hud visible=true valid=1
+561870 KOMO hud visible=false valid=1
+561929 KOMO hud visible=true valid=1
+561931 KOMO hud visible=false valid=1
+563484 AA dist=241m time=20s valid=1
+564942 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="Bražuolės g."/"" dist~200 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+567398 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="Bražuolės g."/"" dist~150 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+571062 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="Bražuolės g."/"" dist~100 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+573455 AA dist=97m time=9s valid=1
+574726 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="Bražuolės g."/"" dist~50 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+577239 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="Bražuolės g."/"" dist~0 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+580624 AA dist=664m time=74s valid=1
+580625 AA turn road="Artojų g." side=1 event=4 angle=0 num=0 valid=1
+580643 maneuver main=28 dir=64 sideArms=0
+580645 turnTo street="Artojų g."
+580968 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Artojų g."/"" dist~650 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+582052 AA turn road="towards Sirpučių g." side=0 event=1 angle=0 num=0 valid=1
+582054 AA dist=0m time=0s valid=1
+582197 maneuver main=13 dir=64 sideArms=2
+582581 AA turn road="E. Andrė g." side=2 event=4 angle=0 num=0 valid=1
+582584 AA dist=534m time=51s valid=1
+582819 maneuver main=28 dir=192 sideArms=0
+582823 turnTo street="E. Andrė g."
+583457 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="E. Andrė g."/"" dist~500 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+583644 AA dist=518m time=50s valid=1
+585928 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="E. Andrė g."/"" dist~450 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+590842 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="E. Andrė g."/"" dist~400 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+593310 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="E. Andrė g."/"" dist~350 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+593654 AA dist=383m time=38s valid=1
+598209 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="E. Andrė g."/"" dist~300 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+601564 maneuver main=13 dir=192 sideArms=2
+601894 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="E. Andrė g."/"" dist~250 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+603604 AA dist=266m time=28s valid=1
+606773 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="E. Andrė g."/"" dist~200 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+610467 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="E. Andrė g."/"" dist~150 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+613758 AA dist=137m time=14s valid=1
+614137 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="E. Andrė g."/"" dist~100 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+617802 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="E. Andrė g."/"" dist~50 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+622176 PROBE pause end: SERVICE REACTED | hud[visible=false type=0 enabled=true answers=18] cluster[visible=false type=-1 enabled=false answers=0] sent=702
+622791 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="E. Andrė g."/"" dist~0 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+623702 AA dist=18m time=1s valid=1
+626748 AA turn road="J. Tiškevičiaus g." side=2 event=4 angle=0 num=0 valid=1
+626750 AA dist=735m time=73s valid=1
+626776 maneuver main=28 dir=192 sideArms=0
+626779 turnTo street="J. Tiškevičiaus g."
+627732 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="J. Tiškevičiaus g."/"" dist~700 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+632675 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="J. Tiškevičiaus g."/"" dist~650 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+633755 AA dist=671m time=66s valid=1
+637578 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="J. Tiškevičiaus g."/"" dist~600 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+643479 AA dist=582m time=54s valid=1
+643725 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="J. Tiškevičiaus g."/"" dist~550 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+652328 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="J. Tiškevičiaus g."/"" dist~500 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+656148 AA turn road="towards Skaisčio g." side=0 event=1 angle=0 num=0 valid=1
+656152 AA dist=0m time=0s valid=1
+656329 maneuver main=13 dir=192 sideArms=2
+656584 AA turn road="A4 Abiejų Tautų Respublikos pl. / Galvės g." side=2 event=4 angle=0 num=0 valid=1
+656585 AA dist=829m time=82s valid=1
+656671 maneuver main=28 dir=192 sideArms=0
+656672 turnTo street="A4 Abiejų Tautų Respublikos pl. / Galvės g."
+657003 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~800 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+660686 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~750 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+665608 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~700 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+666489 AA dist=726m time=72s valid=1
+670544 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~650 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+675454 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~600 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+676529 AA dist=626m time=61s valid=1
+679122 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~550 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+682477 PROBE pause end: no reaction | hud[visible=false type=0 enabled=true answers=18] cluster[visible=false type=-1 enabled=false answers=0] sent=774
+684014 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~500 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+686557 AA dist=491m time=47s valid=1
+687695 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~450 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+690145 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~400 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+693842 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~350 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+696323 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/192/0/""] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~300 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-192, 2<-0, 3<-]>]
+696500 AA dist=339m time=36s valid=1
+699675 maneuver main=13 dir=192 sideArms=2
+700007 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~250 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+703691 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~200 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+706151 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~150 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+706553 AA dist=179m time=23s valid=1
+709843 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~100 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+712332 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~50 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+716087 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="A4 Abiejų Tautų Respublikos pl. / Galvės g."/"" dist~0 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+716554 AA dist=30m time=7s valid=1
+720859 AA turn road="Junction A4 Abiejų Tautų Respublikos pl." side=0 event=14 angle=0 num=0 valid=1
+721084 maneuver main=11 dir=0 sideArms=0
+721088 turnTo street="Junction A4 Abiejų Tautų Respublikos pl."
+722358 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Junction A4 Abiejų Tautų Respublikos pl."/"" dist~50 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+727432 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Junction A4 Abiejų Tautų Respublikos pl."/"" dist~0 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+728547 AA dist=17m time=0s valid=1
+729698 AA turn road="Centras" side=0 event=14 angle=0 num=0 valid=1
+729700 AA dist=627m time=34s valid=1
+729715 turnTo street="Centras"
+730982 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Centras"/"" dist~600 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+732213 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[11/0/0/""] turnTo="Centras"/"" dist~550 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-11, 1<-0, 2<-0, 3<-]>]
+734380 AA turn road="Galvės g." side=0 event=1 angle=0 num=0 valid=1
+734381 AA dist=0m time=0s valid=1
+734678 AA turn road="Veisiejų g." side=1 event=4 angle=0 num=0 valid=1
+734684 AA dist=2416m time=149s valid=1
+735003 maneuver main=28 dir=64 sideArms=0
+735006 turnTo street="Veisiejų g."
+735664 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~2400 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+736891 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~2350 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+738135 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~2300 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+738725 AA dist=2299m time=143s valid=1
+739355 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~2250 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+741812 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~2200 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+742716 PROBE pause end: no reaction | hud[visible=false type=0 enabled=true answers=18] cluster[visible=false type=-1 enabled=false answers=0] sent=866
+743046 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~2150 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+745495 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~2100 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+747936 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~2050 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+748792 AA dist=2025m time=130s valid=1
+749171 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~2000 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+751632 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1950 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+754084 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1900 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+755359 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1850 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+757805 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1800 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+758739 AA dist=1792m time=118s valid=1
+760245 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1750 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+761485 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1700 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+763956 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1650 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+766401 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1600 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+768820 AA dist=1575m time=107s valid=1
+768842 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1550 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+771309 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1500 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+773771 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1450 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+776241 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1400 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+778715 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1350 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+778837 AA dist=1366m time=97s valid=1
+781163 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1300 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+783661 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1250 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+784888 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1200 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+787349 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1150 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+788836 AA dist=1153m time=86s valid=1
+790994 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1100 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+792269 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1050 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+794712 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~1000 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+797179 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~950 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+798481 AA dist=949m time=75s valid=1
+799618 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~900 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+802090 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~850 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+802994 PROBE pause end: no reaction | hud[visible=false type=0 enabled=true answers=18] cluster[visible=false type=-1 enabled=false answers=0] sent=932
+804547 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~800 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+807028 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~750 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+808531 AA dist=747m time=66s valid=1
+809501 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~700 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+811973 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~650 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+814436 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~600 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+816904 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~550 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+818558 AA dist=551m time=56s valid=1
+819393 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~500 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+821870 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~450 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+824333 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~400 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+828021 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~350 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+828515 AA dist=368m time=46s valid=1
+830485 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="Veisiejų g."/"" dist~300 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+832921 maneuver main=13 dir=64 sideArms=2
+834149 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/64/0/"@À"] turnTo="Veisiejų g."/"" dist~250 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>]
+836673 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/64/0/"@À"] turnTo="Veisiejų g."/"" dist~200 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>]
+838789 AA dist=206m time=36s valid=1
+840324 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/64/0/"@À"] turnTo="Veisiejų g."/"" dist~150 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>]
+846440 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/64/0/"@À"] turnTo="Veisiejų g."/"" dist~100 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>]
+848785 AA dist=103m time=26s valid=1
+850151 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/64/0/"@À"] turnTo="Veisiejų g."/"" dist~50 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>]
+853923 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/64/0/"@À"] turnTo="Veisiejų g."/"" dist~0 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-64, 2<-0, 3<-@À]>]
+856950 AA turn road="A4" side=1 event=4 angle=0 num=0 valid=1
+856953 AA dist=2452m time=178s valid=1
+857001 maneuver main=28 dir=64 sideArms=0
+857003 turnTo street="A4"
+857645 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[28/64/0/""] turnTo="A4"/"" dist~2450 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-28, 1<-64, 2<-0, 3<-]>]
+858150 AA turn road="Zigmantiškių g." side=0 event=1 angle=0 num=0 valid=1
+858152 AA dist=0m time=0s valid=1
+858269 maneuver main=13 dir=64 sideArms=2
+858527 AA dist=2806m time=224s valid=1
+858533 AA turn road="Klevų al." side=2 event=13 angle=180 num=2 valid=1
+858593 maneuver main=29 dir=0 sideArms=0
+858595 turnTo street="Klevų al."
+858920 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[29/0/0/""] turnTo="Klevų al."/"" dist~2800 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-29, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-29, 1<-0, 2<-0, 3<-]>]
+860151 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[29/0/0/""] turnTo="Klevų al."/"" dist~2750 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-29, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-29, 1<-0, 2<-0, 3<-]>]
+861497 AA dist=2775m time=221s valid=1
+863208 PROBE pause end: no reaction | hud[visible=false type=0 enabled=true answers=18] cluster[visible=false type=-1 enabled=false answers=0] sent=1024
+865055 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[29/0/0/""] turnTo="Klevų al."/"" dist~2700 unit=0 bar=0 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-29, 1<-0, 2<-0, 3<-]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-29, 1<-0, 2<-0, 3<-]>]
+872000 AA dist=0m time=0s valid=1
+872002 AA turn road="towards Zigmantiškių g." side=0 event=1 angle=0 num=0 valid=1
+872028 AA turn road="towards Zigmantiškių g." side=2 event=4 angle=0 num=0 valid=1
+872030 AA dist=80m time=26s valid=1
+872085 maneuver main=13 dir=192 sideArms=2
+872088 turnTo street="Zigmantiškių g."
+872434 SNOOP plugin rg=1 navStatus=0 mapSwitch=0 kombiMap=2/1 bap=[13/192/0/"À@"] turnTo="Zigmantiškių g."/"" dist~50 unit=0 bar=1 L751=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>] L838=1[<de.vw.mib.asl.framework.internal.framework.GenericCollector [0<-13, 1<-192, 2<-0, 3<-À@]>]
+874357 state stockRg=false focus=-1 recent=true haveManeuver=true ended=false live=true

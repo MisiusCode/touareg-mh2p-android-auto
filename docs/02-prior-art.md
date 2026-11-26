@@ -78,3 +78,13 @@ for Škoda MIB2.5, not MH2p. Not applicable.
 | Get turn data out of Android Auto | fifthBro's approach, re-implemented on the VW framework (Part A, done) |
 | Get map video out of Android Auto | fifthBro's `gal` hook (Part B) |
 | Draw map video on the cluster | Chinese port's renderer and display layering (Part B) |
+
+## State of the field on 2026-11-26
+
+| Project | What changed | Relevance here |
+|---|---|---|
+| [fifthBro/mh2p-cluster](https://github.com/fifthBro/mh2p-cluster) v1105 | **Source of the Android Auto hook is published** (`src/gal_cluster.c`, 3,440 lines) with the renderer (`src/cluster.c`). The hook is now loaded by replacing `apps/gal` with a ksh wrapper that sets `LD_PRELOAD` and runs `gal.real`; no edit of the system config partition. Porsche supported, Audi experimental, no VW build. Known issue on Audi: HUD shows street name only, no phone arrows. | The Android Auto half of Part B. |
+| [a78c7/touareg-cn-carplay-mods](https://github.com/a78c7/touareg-cn-carplay-mods) v23.6 | The upstream of the plafp copy used earlier, now far ahead: cluster map with telemetry, 60 fps themes, wireless console, signed OTA, shop-patch audit tools. CarPlay only; Android Auto is only unlocked. Gated to `MH2p_CN_VWG36_P*`; aborts on EU builds. Its `cl_render` reads the same `/cluster_h264_shm` ring that fifthBro's hook writes. `docs/07` section 12 documents shop startup wrappers that link `challenge.pub` and `autorunner` (the two lines in this car's wrapper); the harmful variants also kill `challenge`/`sshd` in a loop, which this car's wrapper does not. | Renderer and display hand-over (`Rebind.java`), installer ideas. |
+| Touarego (touareg-freunde.de thread 30309, 2026-11-02) | Community beta for **MH2p_ER_VWG36_P2869**: Apple Maps / Google Maps in the cluster over wired CarPlay, full-screen CarPlay. Based on a78c7 + fifthBro + ModKit. No HUD arrows, no Android Auto. Installer requires exact stock files and installs the ModKit startup wrapper and bundle 97. | Proof that the renderer side works on this firmware; `cl.conf` for the EU cluster; sources in its `QUELLEN_UND_BUILD.zip`. **Not to be installed on this car** (shop wrapper, bundle 97 in use, CarPlay only). |
+| [CrEaK/mh2p-cluster](https://github.com/CrEaK/mh2p-cluster) | Audi e-tron P2873: Google Maps from Android Auto seen in the virtual cockpit. | Closest precedent for the hook on a non-Porsche build. |
+

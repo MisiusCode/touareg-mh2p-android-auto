@@ -1,11 +1,47 @@
-# Part B: the live map (not started)
+# Part B: the live map (planning, desk work started 2026-11-26)
 
 Goal: the phone's map (Google Maps, Waze) drawn in the cluster in place of the factory map.
 
-Related finding (2026-11-22): the HUD arrow is also a picture (KOMO view, streamed to the
-HUD) and only the factory navigation fills it. If the plugin's tries (0.5) fail, an Android
-Auto arrow on the HUD needs the same kind of work as this part: rendering our own picture
-into a display stream.
+## Plan (2026-11-26)
+
+Join two published halves: fifthBro's Android Auto hook (phone -> H.264 in the shared ring
+`/cluster_h264_shm`) and the a78c7 / Touarego renderer (`cl_render`, `clusterd`, reads that
+ring, runs on P2869 for CarPlay). See `02-prior-art.md`, "State of the field".
+
+Checked against this car's files so far:
+
+- All 40 functions the hook resolves are available: 35 by name in `gal` /
+  `libautoreceiver.so` / `libprotobuf3full.so`, the 5 `screen_*` ones through
+  `libscreen.so.1`, which `gal` itself links (also `libnvmedia.so`, `libnvparser.so`).
+- `cl_render` from Touarego needs only `libscreen`, `libEGL`, `libGLESv2`, `libz`, `libm`, `libc`.
+- `gal` is started by `smartphone_integrator` from `/run/enforcer/eso/bin/apps`, 2 setup and
+  2 runtime retries. **Open:** whether that sandbox accepts a script in place of `gal`
+  (fifthBro's wrapper method). Fallback: `LD_PRELOAD` in the `gal` child's `envs` in
+  `smartphone_integrator.json` on `/dev/fs0p1` (what Touarego does for CarPlay).
+- Not yet compared: the hook's object-layout assumptions (`MessageRouter`, protobuf objects).
+
+Stages, each one card with a rollback card made first:
+
+| Stage | Content | Failure mode |
+|---|---|---|
+| B0 | Desk: build hook (listen-only variant) and renderer for QNX armv7; compare layouts; study Touarego `cl.conf` / `Rebind` | none on the car |
+| B1 | Read-only facts from the car | none. **Folded into plugin 0.7.1** (layer recorder + `partb_info.txt`) and Dump4 |
+| B2 | `gal` wrapper + hook that only logs the service discovery | Android Auto does not start until rollback |
+| B3 | Hook active: request the cluster stream, count bytes, no display | Android Auto crash / reconnect loop until rollback |
+| B4 | Renderer on the cluster, factory map back on disconnect | black or frozen map area until rollback |
+| B5 | Position, scaling, day/night, tie-in with the plugin | cosmetic |
+
+No stage touches the boot chain; the shop's startup wrapper stays as it is. B3 is the
+make-or-break step (the hook has never run on a VW build). Build blocker on 2026-11-26: the
+QNX cross compiler (luka-dev/qnx65-armv7-toolchain) is a Docker build, not yet running.
+
+Starting the renderer at boot without the ModKit hook: planned from the `gal` wrapper;
+what launches `clusterd` / `cl_render` in the Touarego design still has to be read.
+
+Related finding: the HUD arrow is also a picture stream (see `05-test-log.md`). If B4 works,
+drawing an arrow onto the HUD display is the follow-up.
+
+The sections below are the earlier notes (2026-11-21), kept for the risks.
 
 ## Pieces
 

@@ -125,12 +125,37 @@ sent; zero responses, no attribute change. Cluster instance reported nothing.
 **Conclusion: the HUD arrow is the KOMO picture, and it is switched on and filled by the
 factory navigation only.** Street and distance reach the HUD as data, the arrow does not.
 
-### 0.5: automatic tries (built 2026-11-22, not yet run)
+### 0.5 drive (2026-11-26): the picture service takes no content
 
-Runs the try sequence in `04-part-a-plugin.md` during Android Auto guidance and logs per
-step whether the service reacted. Needs at least 10 minutes of uninterrupted guidance.
-Look for `PROBE` lines. If none reacts, the arrow cannot come from Part A; the remaining
-route is drawing a picture ourselves (the same kind of work as Part B).
+`logs/2026-11-26_plugin-0.5_probe-drive_tail-only.log`. No arrow seen. The log had passed
+its size cap and restarted, so only the end of round 3 survived (fixed in 0.6).
+
+- The HUD view answered the view-style commands only: 18 answers for 18 `setKomoViewStyle`
+  calls. No answer or attribute change for `setRouteInfoElement`, `setRouteInfo`,
+  `notifyVisibility` or the off/on step in the part of the log that survived.
+- Setting the style back to 5 made the HUD view report `visible=true` then `false` within
+  milliseconds, twice, with no content.
+- HUD stayed `enabled=true visible=false type=0`; the cluster instance never reported.
+
+**Conclusion: the HUD arrow cannot be fed through the existing services. Part A ends at
+street name + distance.** Nobody else has phone arrows on the HUD of a European MH2p car
+either (see `02-prior-art.md`, state of 2026-11-26).
+
+The unit's `videoencoderservice.json` has one encoder block `HUD` (`/dev/mlb/isoTX1`) and
+one `CLUSTER` (`/dev/mlb/isoTX2`): both pictures are video streams encoded by the head unit.
+An arrow on the HUD would mean drawing onto the HUD display ourselves (after Part B).
+
+### 0.6 / 0.7.1 (2026-11-26)
+
+- **0.6**: experiment off by default (`vwaa_probe` marker runs it again); log in two files
+  used in turn. Built, superseded by 0.7.1 before it was installed.
+- **0.7.1**: 0.6 plus two read-only recorders for Part B: `DispEvents` logs
+  `showDisplayablesResult` / `activeContext` per display (which layers the cluster shows),
+  and the install card writes `Logs/partb_info.txt` (free space, file lists). Lines starting
+  DISP / KOMO / GFX / PROBE / start / ACTIVATE also go to `vwaa_keep.log`, which is never
+  wiped (stops at 400 KB). **Delivered, not yet run.** No dedicated drive needed; the next
+  card collects the logs. To do once during Android Auto guidance: page the cluster between
+  map and navigation view, press VIEW, note whether the navigation view shows an arrow.
 
 ### Event 14
 

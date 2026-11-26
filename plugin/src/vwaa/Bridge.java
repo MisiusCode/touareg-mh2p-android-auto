@@ -28,7 +28,8 @@ import org.dsi.ifc.androidauto2.DSIAndroidAuto2;
  *   vwaa_no838   do not write list 838
  *   vwaa_reset   clear the self-disable counter
  *   vwaa_nosnoop do not record what the cluster service sees
- *   vwaa_nokomo  do not offer the manoeuvre to the HUD picture service (experiment), only listen
+ *   vwaa_probe   0.6: run the HUD picture experiment of 0.5 (off by default; without it the
+ *                plugin only listens to that service and logs what it reports)
  *   vwaa_noprobe offer it in the plain form only, do not try the other switches (0.5)
  *   vwaa_plain   write the junction symbol at every distance, without side streets (as in 0.1/0.2)
  */
@@ -56,7 +57,7 @@ final class Bridge implements Runnable {
 
     private final AaEvents events = new AaEvents();
     private final Komo komo = new Komo();
-    private boolean noKomo = false;
+    private boolean noKomo = true;
     private boolean noProbe = false;
     private DSIAndroidAuto2 aa = null;
     private boolean subscribed = false;
@@ -212,7 +213,8 @@ final class Bridge implements Runnable {
         noHide = Flags.onMedia("vwaa_nohide");
         noSnoop = Flags.onMedia("vwaa_nosnoop");
         plain = Flags.onMedia("vwaa_plain");
-        noKomo = Flags.onMedia("vwaa_nokomo");
+        // 0.6: the HUD picture experiment is off unless a vwaa_probe marker is present
+        noKomo = !Flags.onMedia("vwaa_probe");
         noProbe = Flags.onMedia("vwaa_noprobe");
         if (Flags.onMedia("vwaa_no838")) {
             no838 = true;

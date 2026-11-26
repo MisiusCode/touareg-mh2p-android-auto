@@ -47,6 +47,8 @@ final class Komo {
     private DSIKOMONavInfo navInfo = null;
     private final KomoEvents[] ev = new KomoEvents[] { new KomoEvents("cluster"), new KomoEvents("hud") };
     private final GfxEvents[] gfx = new GfxEvents[] { new GfxEvents("cluster"), new GfxEvents("hud") };
+    private final DispEvents disp = new DispEvents();
+    private boolean dispDone = false;
     private long lastTry = 0L;
     private int tries = 0;
     private boolean ready = false;
@@ -74,6 +76,15 @@ final class Komo {
         tries++;
         try {
             DSIProxy p = DSIProxyFactory.getDSIProxyAPI().getDSIProxy();
+            if (!dispDone) {
+                dispDone = true;
+                try {
+                    p.addResponseListener(null, org.dsi.ifc.displaymanagement.DSIDisplayManagementListener.class, disp);
+                    Log.log("DISP listener registered (listen only)");
+                } catch (Throwable t) {
+                    Log.log("DISP listener: " + t);
+                }
+            }
             int ok = 0;
             for (int i = 0; i < 2; i++) {
                 if (view[i] == null) {
