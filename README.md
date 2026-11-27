@@ -20,6 +20,12 @@ firmware version without redoing the checks in `docs/03-verification.md`.
 | A | Turn data (arrow, distance, street) from Android Auto to cluster and HUD | **Closed at street name + distance on the HUD.** 0.1 to 0.5 ran on the car; the HUD arrow is a picture stream that only the factory navigation fills, and 0.5 showed it cannot be fed through existing services. Current card: 0.7.1 (everyday version + read-only recorders for Part B) |
 | B | The phone's live map in the cluster | Planned, B1 done, stopped at B2. Both halves now exist in public source (Android Auto hook: fifthBro; renderer on P2869: Touarego). Plan and stages in `docs/06-part-b-map.md` |
 
+## For another developer
+
+`HANDOFF.md` gathers everything in one page for someone continuing the live-map work
+(the Touarego author, fifthBro's project, or a coder): the car, the shop patch to watch
+for, what works, why there is no arrow, the plan, and what the owner can share.
+
 ## Next steps
 
 1. Plugin 0.7.1 is installed and is the everyday version (street name + distance on the HUD).
