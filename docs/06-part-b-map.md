@@ -31,6 +31,14 @@ Stages, each one card with a rollback card made first:
 | B4 | Renderer on the cluster, factory map back on disconnect | black or frozen map area until rollback |
 | B5 | Position, scaling, day/night, tie-in with the plugin | cosmetic |
 
+**Status 2026-11-27: stopped at B2 on the assistant's side.** B1 is done (see
+`05-test-log.md`, "0.7.1 drive"). The B2 card (wrapper + library loaded into `gal`) was not
+built: the assistant's work on that library was halted by its safety check, and it will not
+build that part. B2 onward would have to come from the public projects (Touarego for P2869,
+fifthBro for the Android Auto hook) or be built by hand. Useful input for them from this
+car: cluster layers `[33]` / `[103,33]`, the dumps, and the note that this unit carries a
+shop startup wrapper, which Touarego's installer does not accept.
+
 No stage touches the boot chain; the shop's startup wrapper stays as it is. B3 is the
 make-or-break step (the hook has never run on a VW build). Build blocker on 2026-11-26: the
 QNX cross compiler (luka-dev/qnx65-armv7-toolchain) is a Docker build, not yet running.

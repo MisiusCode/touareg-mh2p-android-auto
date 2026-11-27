@@ -157,6 +157,27 @@ An arrow on the HUD would mean drawing onto the HUD display ourselves (after Par
   card collects the logs. To do once during Android Auto guidance: page the cluster between
   map and navigation view, press VIEW, note whether the navigation view shows an arrow.
 
+### 0.7.1 drive (2026-11-27): cluster layers recorded
+
+`logs/2026-11-27_plugin-0.7.1_keep.log` (nothing cropped), `logs/2026-11-27_partb_info.txt`.
+One Android Auto session and one factory-navigation session of about 53 minutes.
+
+- **Cluster display (4):** normally layers `[33]` (factory map). At every manoeuvre the list
+  becomes `[103,33]` and returns to `[33]` afterwards; 18 times in the drive.
+- **103 is the manoeuvre picture.** Each change to `[103,33]` coincides within milliseconds
+  with the HUD KOMO view switching to type 1 (manoeuvre view), each return to `[33]` with
+  type 2 (route info).
+- Layer 33 for the map is the same number the a78c7 renderer assumes (`[58,33]`).
+- **Android Auto session:** no change of the cluster layers, 103 never shown. User: no arrow
+  on any screen (HUD, cluster map view, cluster navigation view) with Android Auto.
+- No `showDisplayablesResult` was seen for the HUD display (5); unknown whether it has layers
+  that can be listed the same way.
+- Centre display (0): `[16]`, `[16,17]`, `[16,19]`.
+
+Unit facts: `/mnt/app` 2 GB, 943 MB free; `/mnt/ota` 8 GB, 8.1 GB free; `/usr/lib/libscreen.so.1`
+present; `apps/gal` (1,472,868 B) and `apps/dio_manager` (958,480 B) dated Aug 2021 (stock);
+no `apps/cluster` folder; `/mnt/ota/challenge.pub` present (the shop patch).
+
 ### Event 14
 
 Event 14 with side 0 appeared for "continue towards …" and is mapped to 11 / 0 (follow

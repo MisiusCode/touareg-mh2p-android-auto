@@ -1,0 +1,121 @@
+7074 VWAndroidAutoNav 0.7.1 Activator.start
+58281 DISP listener registered (listen only)
+58299 KOMO cluster service connected
+58317 GFX cluster stream service connected
+58383 DISP d0 layers [16,17] 0/0
+58394 KOMO hud visible=false valid=1
+58397 KOMO hud viewType=0 valid=1 (1 manoeuvre view, 2 route info)
+58402 KOMO hud enabled=true valid=1
+58405 KOMO hud service connected
+58419 GFX hud stream service connected
+58424 KOMO nav info service connected
+58428 GFX hud state=1 valid=1 (1 available)
+58432 GFX hud dataRate=1 valid=1 (0 off, 1 reduced, 2 full)
+58436 GFX hud requestSync=0 valid=1
+58444 ACTIVATE: routeGuidanceState=1
+58543 GFX hud dataRate=2 valid=1 (0 off, 1 reduced, 2 full)
+84016 DISP d0 layers [16] 2/0
+1820414 DISP d0 layers [16] 0/0
+1820724 DISP d0 layers [16,17] 0/0
+1858810 DISP d0 layers [16] 2/0
+1859429 GFX hud dataRate=1 valid=1 (0 off, 1 reduced, 2 full)
+1865235 DISP d0 layers [16] 0/0
+1899878 DEACTIVATE (guidance ended)
+1921216 GFX hud state=0 valid=1 (1 available)
+5626 VWAndroidAutoNav 0.7.1 Activator.start
+58517 DISP listener registered (listen only)
+58529 KOMO cluster service connected
+58545 GFX cluster stream service connected
+58557 KOMO hud visible=false valid=1
+58560 KOMO hud service connected
+58569 KOMO hud viewType=0 valid=1 (1 manoeuvre view, 2 route info)
+58574 KOMO hud enabled=true valid=1
+58576 GFX hud state=1 valid=1 (1 available)
+58578 GFX hud dataRate=2 valid=1 (0 off, 1 reduced, 2 full)
+58580 GFX hud requestSync=0 valid=1
+58582 GFX hud stream service connected
+58583 KOMO nav info service connected
+66973 DISP d0 layers [16] 0/0
+67426 DISP d0 layers [16] 2/0
+80337 DISP d0 layers [16,19] 0/0
+85217 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+85325 KOMO hud visible=true valid=1
+86559 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+86564 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+86567 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+121645 DISP d4 layers [33] 2/0
+150503 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+150507 DISP d4 layers [33] 0/0
+236362 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+236367 DISP d4 layers [103,33] 0/0
+240068 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+240074 DISP d4 layers [33] 0/0
+241908 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+241911 DISP d4 layers [103,33] 0/0
+269669 DISP d4 layers [33] 0/0
+269672 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+271527 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+271532 DISP d4 layers [103,33] 0/0
+276860 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+276868 DISP d4 layers [33] 0/0
+278708 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+278713 DISP d4 layers [103,33] 0/0
+287050 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+287053 DISP d4 layers [33] 0/0
+289100 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+293048 DISP d4 layers [103,33] 0/0
+315933 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+315937 DISP d4 layers [33] 0/0
+317776 DISP d4 layers [103,33] 0/0
+317778 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+322911 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+322914 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+322917 DISP d4 layers [33] 0/0
+326453 DISP d4 layers [103,33] 0/0
+413485 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+413489 DISP d4 layers [33] 0/0
+587893 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+627879 DISP d4 layers [103,33] 0/0
+896131 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+896151 DISP d4 layers [33] 0/0
+1332986 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+1356461 DISP d4 layers [103,33] 0/0
+1455246 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+1455258 DISP d4 layers [33] 0/0
+1458194 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+1719685 DISP d4 layers [103,33] 0/0
+1746552 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+1746555 DISP d4 layers [33] 0/0
+2172890 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+2228285 DISP d4 layers [103,33] 0/0
+2247113 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+2247116 DISP d4 layers [33] 0/0
+2250060 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+2300206 DISP d4 layers [103,33] 0/0
+2321703 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+2321709 DISP d4 layers [33] 0/0
+2433926 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+2455029 DISP d4 layers [103,33] 0/0
+2480503 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+2480506 DISP d4 layers [33] 0/0
+2989908 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+3010414 DISP d4 layers [103,33] 0/0
+3065615 DISP d4 layers [33] 0/0
+3065618 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+3069264 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+3123535 DISP d4 layers [103,33] 0/0
+3159859 DISP d4 layers [33] 0/0
+3159862 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+3163216 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+3186409 DISP d4 layers [103,33] 0/0
+3227692 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+3227703 DISP d4 layers [33] 0/0
+3228635 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+3228644 DISP d4 layers [103,33] 0/0
+3238783 DISP d4 layers [33] 0/0
+3238787 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+3243264 KOMO hud viewType=1 valid=1 (1 manoeuvre view, 2 route info)
+3255053 KOMO hud viewType=2 valid=1 (1 manoeuvre view, 2 route info)
+3270111 GFX hud dataRate=1 valid=1 (0 off, 1 reduced, 2 full)
+3270122 KOMO hud viewType=0 valid=1 (1 manoeuvre view, 2 route info)
+3270213 KOMO hud visible=false valid=1

@@ -12,20 +12,22 @@ two open-source projects, tested in simulation on a PC, and then tried on exactl
 A mistake can leave the head unit needing service tools. Do not reuse on another
 firmware version without redoing the checks in `docs/03-verification.md`.
 
-## Status (2026-11-26)
+## Status (2026-11-27)
 
 | Part | What | State |
 |---|---|---|
 | Dumps | Read-only SD cards that copy firmware files off the unit | Done, 4 cards, all ran on the car |
 | A | Turn data (arrow, distance, street) from Android Auto to cluster and HUD | **Closed at street name + distance on the HUD.** 0.1 to 0.5 ran on the car; the HUD arrow is a picture stream that only the factory navigation fills, and 0.5 showed it cannot be fed through existing services. Current card: 0.7.1 (everyday version + read-only recorders for Part B) |
-| B | The phone's live map in the cluster | Planning; desk work started. Both halves now exist in public source (Android Auto hook: fifthBro; renderer on P2869: Touarego). Plan and stages in `docs/06-part-b-map.md` |
+| B | The phone's live map in the cluster | Planned, B1 done, stopped at B2. Both halves now exist in public source (Android Auto hook: fifthBro; renderer on P2869: Touarego). Plan and stages in `docs/06-part-b-map.md` |
 
 ## Next steps
 
-1. Install the 0.7.1 card (`plugin/dist/VWAndroidAutoNav-0.7.1.jar` + `plugin/installer/`), then drive normally.
-2. Once, with Android Auto guidance running: page the cluster between map and navigation view, press VIEW, note whether the navigation view shows an arrow.
-3. Desk: get the QNX cross compiler running, build the hook in listen-only mode, compare its object layouts with the car's `gal` / `libautoreceiver.so`.
-4. B2 card (wrapper + listen-only hook) with its rollback card; it also brings back the 0.7.1 logs.
+1. Plugin 0.7.1 is installed and is the everyday version (street name + distance on the HUD).
+2. Part B is stopped at stage B2 from the assistant's side (see `docs/06-part-b-map.md`,
+   "Status 2026-11-27"). To continue: take the recorded material to the Touarego /
+   fifthBro projects, or build the Android Auto hook by hand from fifthBro's source.
+3. Optional plugin-only idea, untested: ask the display manager about the HUD display's
+   layers (the cluster shows the factory arrow picture as layer 103 above the map, 33).
 
 Why there is no HUD arrow: `docs/05-test-log.md`, "Arrow investigation".
 
